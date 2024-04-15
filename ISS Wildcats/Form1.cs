@@ -6,5 +6,10 @@ namespace ISS_Wildcats
         {
             InitializeComponent();
         }
+
+        private void labelAccount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

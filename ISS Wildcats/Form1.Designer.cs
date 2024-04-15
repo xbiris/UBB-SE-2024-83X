@@ -28,12 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            SuspendLayout();
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1200, 675);
+            Font = new Font("Segoe UI", 13F);
+            Margin = new Padding(4);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label labelWellcome;
+        private Panel panel1;
+        private Label label5;
+        private Label labelSettingsSmeniu;
+        private Label labelAccount;
+        private Panel panel2;
+        private Label label4;
+        private Label label3;
+        private Label label6;
     }
 }
