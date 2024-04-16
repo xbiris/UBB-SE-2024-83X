@@ -5,8 +5,12 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>ISS_Wildcats</RootNamespace>
     <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+  </ItemGroup>
 
 </Project>
