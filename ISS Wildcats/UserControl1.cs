@@ -9,6 +9,7 @@ namespace ISS_Wildcats
         public UserControl1()
         {
             InitializeComponent();
+            this.Visible = false;
 
             // Attach event handlers for all labels
 
@@ -25,6 +26,7 @@ namespace ISS_Wildcats
             label10.MouseLeave += SpecialLabel_MouseLeave;
             label11.MouseHover += SpecialLabel_MouseHover;
             label11.MouseLeave += SpecialLabel_MouseLeave;
+            this.Dock = DockStyle.Right;
         }
 
 
@@ -57,6 +59,17 @@ namespace ISS_Wildcats
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label11_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            this.panel3.Visible = false;
         }
     }
 }

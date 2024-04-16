@@ -63,6 +63,8 @@ namespace ISS_Wildcats
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel11 = new Panel();
+            button7 = new Button();
+            userControl11 = new UserControl1();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
@@ -100,7 +102,7 @@ namespace ISS_Wildcats
             // 
             textBox1.Location = new Point(222, 31);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(640, 23);
+            textBox1.Size = new Size(640, 36);
             textBox1.TabIndex = 1;
             // 
             // button2
@@ -211,7 +213,7 @@ namespace ISS_Wildcats
             label8.AutoSize = true;
             label8.Location = new Point(3, 135);
             label8.Name = "label8";
-            label8.Size = new Size(96, 15);
+            label8.Size = new Size(176, 30);
             label8.TabIndex = 1;
             label8.Text = "Song title / Artist";
             // 
@@ -239,7 +241,7 @@ namespace ISS_Wildcats
             label7.AutoSize = true;
             label7.Location = new Point(3, 135);
             label7.Name = "label7";
-            label7.Size = new Size(96, 15);
+            label7.Size = new Size(176, 30);
             label7.TabIndex = 1;
             label7.Text = "Song title / Artist";
             // 
@@ -267,7 +269,7 @@ namespace ISS_Wildcats
             label6.AutoSize = true;
             label6.Location = new Point(3, 135);
             label6.Name = "label6";
-            label6.Size = new Size(96, 15);
+            label6.Size = new Size(176, 30);
             label6.TabIndex = 1;
             label6.Text = "Song title / Artist";
             // 
@@ -295,7 +297,7 @@ namespace ISS_Wildcats
             label5.AutoSize = true;
             label5.Location = new Point(3, 135);
             label5.Name = "label5";
-            label5.Size = new Size(96, 15);
+            label5.Size = new Size(176, 30);
             label5.TabIndex = 1;
             label5.Text = "Song title / Artist";
             // 
@@ -323,7 +325,7 @@ namespace ISS_Wildcats
             label4.AutoSize = true;
             label4.Location = new Point(3, 135);
             label4.Name = "label4";
-            label4.Size = new Size(96, 15);
+            label4.Size = new Size(176, 30);
             label4.TabIndex = 1;
             label4.Text = "Song title / Artist";
             // 
@@ -351,7 +353,7 @@ namespace ISS_Wildcats
             label3.AutoSize = true;
             label3.Location = new Point(3, 135);
             label3.Name = "label3";
-            label3.Size = new Size(96, 15);
+            label3.Size = new Size(176, 30);
             label3.TabIndex = 1;
             label3.Text = "Song title / Artist";
             // 
@@ -379,7 +381,7 @@ namespace ISS_Wildcats
             label2.AutoSize = true;
             label2.Location = new Point(3, 135);
             label2.Name = "label2";
-            label2.Size = new Size(96, 15);
+            label2.Size = new Size(176, 30);
             label2.TabIndex = 1;
             label2.Text = "Song title / Artist";
             // 
@@ -407,7 +409,7 @@ namespace ISS_Wildcats
             label1.AutoSize = true;
             label1.Location = new Point(3, 135);
             label1.Name = "label1";
-            label1.Size = new Size(96, 15);
+            label1.Size = new Size(176, 30);
             label1.TabIndex = 1;
             label1.Text = "Song title / Artist";
             label1.Click += label1_Click;
@@ -429,16 +431,41 @@ namespace ISS_Wildcats
             panel11.Size = new Size(845, 462);
             panel11.TabIndex = 3;
             // 
+            // button7
+            // 
+            button7.Location = new Point(986, 24);
+            button7.Name = "button7";
+            button7.Size = new Size(87, 35);
+            button7.TabIndex = 5;
+            button7.Text = "Profile";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // userControl11
+            // 
+            userControl11.AutoSize = true;
+            userControl11.BackColor = SystemColors.ActiveCaptionText;
+            userControl11.Dock = DockStyle.Right;
+            userControl11.Location = new Point(510, 0);
+            userControl11.Name = "userControl11";
+            userControl11.Size = new Size(690, 675);
+            userControl11.TabIndex = 6;
+            userControl11.Visible = false;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1088, 617);
+            ClientSize = new Size(1200, 675);
+            Controls.Add(userControl11);
+            Controls.Add(button7);
             Controls.Add(splitContainer1);
             Controls.Add(panel1);
             Controls.Add(button2);
             Controls.Add(textBox1);
             Controls.Add(button1);
+            Font = new Font("Segoe UI", 13F);
+            Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
             panel1.ResumeLayout(false);
@@ -472,18 +499,6 @@ namespace ISS_Wildcats
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
-            SuspendLayout();
-            // 
-            // Form1
-            // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1200, 675);
-            Font = new Font("Segoe UI", 13F);
-            Margin = new Padding(4);
-            Name = "Form1";
-            Text = "Form1";
-            ResumeLayout(false);
         }
 
         #endregion
@@ -523,15 +538,7 @@ namespace ISS_Wildcats
         private PictureBox pictureBox2;
         private Panel panel10;
         private Panel panel11;
-
-        private Label labelWellcome;
-        private Panel panel1;
-        private Label label5;
-        private Label labelSettingsSmeniu;
-        private Label labelAccount;
-        private Panel panel2;
-        private Label label4;
-        private Label label3;
-        private Label label6;
+        private Button button7;
+        private UserControl1 userControl11;
     }
 }

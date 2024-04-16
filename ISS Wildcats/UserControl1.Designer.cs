@@ -46,6 +46,7 @@ namespace ISS_Wildcats
             label10 = new Label();
             label11 = new Label();
             panel3 = new Panel();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -161,10 +162,10 @@ namespace ISS_Wildcats
             label1.BackColor = SystemColors.ActiveCaptionText;
             label1.Font = new Font("Segoe UI", 11F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(63, 52);
+            label1.Location = new Point(63, 43);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(171, 39);
+            label1.Size = new Size(229, 39);
             label1.TabIndex = 8;
             label1.Text = "Account Settings";
             label1.Click += label1_Click;
@@ -174,7 +175,7 @@ namespace ISS_Wildcats
             label2.BackColor = SystemColors.ActiveCaptionText;
             label2.Font = new Font("Segoe UI", 13F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(45, 13);
+            label2.Location = new Point(45, 4);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(411, 39);
@@ -246,6 +247,7 @@ namespace ISS_Wildcats
             label11.Size = new Size(151, 39);
             label11.TabIndex = 9;
             label11.Text = "Password";
+            label11.Click += label11_Click_1;
             // 
             // panel3
             // 
@@ -261,12 +263,23 @@ namespace ISS_Wildcats
             panel3.TabIndex = 14;
             panel3.Visible = false;
             // 
+            // button1
+            // 
+            button1.Location = new Point(316, 15);
+            button1.Name = "button1";
+            button1.Size = new Size(129, 54);
+            button1.TabIndex = 15;
+            button1.Text = "Go Back";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // UserControl1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             BackColor = SystemColors.ActiveCaptionText;
+            Controls.Add(button1);
             Controls.Add(panel3);
             Controls.Add(label1);
             Controls.Add(label2);
@@ -304,5 +317,6 @@ namespace ISS_Wildcats
         private Label label10;
         private Label label11;
         private Panel panel3;
+        private Button button1;
     }
 }
