@@ -36,7 +36,7 @@ namespace ISS_Wildcats
 
             if (sender is Label label)
             {
-                label.Font = new Font("Segoe UI", 15);
+                label.Font = new Font("Odor Mean Chey", 16);
             }
 
         }
@@ -46,7 +46,7 @@ namespace ISS_Wildcats
 
             if (sender is Label label)
             {
-                label.Font = new Font("Segoe UI", 11);
+                label.Font = new Font("Odor Mean Chey",14);
             }
 
         }
@@ -66,10 +66,9 @@ namespace ISS_Wildcats
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            this.Visible = false;
-            this.panel3.Visible = false;
+
         }
     }
 }

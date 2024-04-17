@@ -46,7 +46,6 @@ namespace ISS_Wildcats
             label10 = new Label();
             label11 = new Label();
             panel3 = new Panel();
-            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -58,7 +57,8 @@ namespace ISS_Wildcats
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(labelAccount);
             panel1.Controls.Add(labelWellcome);
-            panel1.Location = new Point(42, -50);
+            panel1.Location = new Point(37, -38);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(0, 0);
             panel1.TabIndex = 4;
@@ -70,9 +70,10 @@ namespace ISS_Wildcats
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(labelSettingsSmeniu);
-            panel2.Location = new Point(21, 140);
+            panel2.Location = new Point(18, 105);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(188, 216);
+            panel2.Size = new Size(164, 162);
             panel2.TabIndex = 4;
             // 
             // label6
@@ -80,10 +81,10 @@ namespace ISS_Wildcats
             label6.BackColor = SystemColors.ActiveCaptionText;
             label6.Font = new Font("Segoe UI", 11F);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(27, 158);
+            label6.Location = new Point(24, 118);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(151, 39);
+            label6.Size = new Size(132, 29);
             label6.TabIndex = 6;
             label6.Text = "Sound";
             // 
@@ -92,10 +93,10 @@ namespace ISS_Wildcats
             label4.BackColor = SystemColors.ActiveCaptionText;
             label4.Font = new Font("Segoe UI", 11F);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(27, 119);
+            label4.Location = new Point(24, 89);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(151, 39);
+            label4.Size = new Size(132, 29);
             label4.TabIndex = 5;
             label4.Text = "Display";
             // 
@@ -104,10 +105,10 @@ namespace ISS_Wildcats
             label3.BackColor = SystemColors.ActiveCaptionText;
             label3.Font = new Font("Segoe UI", 11F);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(27, 80);
+            label3.Location = new Point(24, 60);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(151, 39);
+            label3.Size = new Size(132, 29);
             label3.TabIndex = 4;
             label3.Text = "Language";
             // 
@@ -116,10 +117,10 @@ namespace ISS_Wildcats
             label5.BackColor = SystemColors.ActiveCaptionText;
             label5.Font = new Font("Segoe UI", 11F);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(27, 2);
+            label5.Location = new Point(24, 2);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(151, 39);
+            label5.Size = new Size(132, 29);
             label5.TabIndex = 3;
             label5.Text = "Profile Picture";
             // 
@@ -128,10 +129,10 @@ namespace ISS_Wildcats
             labelSettingsSmeniu.BackColor = SystemColors.ActiveCaptionText;
             labelSettingsSmeniu.Font = new Font("Segoe UI", 11F);
             labelSettingsSmeniu.ForeColor = Color.White;
-            labelSettingsSmeniu.Location = new Point(27, 41);
+            labelSettingsSmeniu.Location = new Point(24, 31);
             labelSettingsSmeniu.Margin = new Padding(4, 0, 4, 0);
             labelSettingsSmeniu.Name = "labelSettingsSmeniu";
-            labelSettingsSmeniu.Size = new Size(151, 39);
+            labelSettingsSmeniu.Size = new Size(132, 29);
             labelSettingsSmeniu.TabIndex = 2;
             labelSettingsSmeniu.Text = "Password";
             // 
@@ -139,10 +140,10 @@ namespace ISS_Wildcats
             // 
             labelAccount.BackColor = SystemColors.ActiveCaptionText;
             labelAccount.ForeColor = Color.White;
-            labelAccount.Location = new Point(31, 102);
+            labelAccount.Location = new Point(27, 76);
             labelAccount.Margin = new Padding(4, 0, 4, 0);
             labelAccount.Name = "labelAccount";
-            labelAccount.Size = new Size(178, 39);
+            labelAccount.Size = new Size(156, 29);
             labelAccount.TabIndex = 1;
             labelAccount.Text = "Account Settings";
             // 
@@ -150,101 +151,101 @@ namespace ISS_Wildcats
             // 
             labelWellcome.BackColor = SystemColors.ActiveCaptionText;
             labelWellcome.ForeColor = Color.White;
-            labelWellcome.Location = new Point(31, 54);
+            labelWellcome.Location = new Point(27, 40);
             labelWellcome.Margin = new Padding(4, 0, 4, 0);
             labelWellcome.Name = "labelWellcome";
-            labelWellcome.Size = new Size(178, 39);
+            labelWellcome.Size = new Size(156, 29);
             labelWellcome.TabIndex = 0;
             labelWellcome.Text = "HelloDude";
             // 
             // label1
             // 
-            label1.BackColor = SystemColors.ActiveCaptionText;
-            label1.Font = new Font("Segoe UI", 11F);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Odor Mean Chey", 11.25F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(63, 43);
+            label1.Location = new Point(51, 40);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(229, 39);
+            label1.Size = new Size(200, 29);
             label1.TabIndex = 8;
             label1.Text = "Account Settings";
             label1.Click += label1_Click;
             // 
             // label2
             // 
-            label2.BackColor = SystemColors.ActiveCaptionText;
-            label2.Font = new Font("Segoe UI", 13F);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Odor Mean Chey", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(45, 4);
+            label2.Location = new Point(39, 3);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(411, 39);
+            label2.Size = new Size(196, 48);
             label2.TabIndex = 7;
-            label2.Text = "HelloDude";
+            label2.Text = "Hello Dude";
             label2.Click += label2_Click;
             // 
             // label7
             // 
             label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label7.BackColor = SystemColors.ActiveCaptionText;
-            label7.Font = new Font("Segoe UI", 11F);
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Odor Mean Chey", 11.25F);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(20, 158);
+            label7.Location = new Point(18, 123);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(128, 39);
+            label7.Size = new Size(112, 29);
             label7.TabIndex = 13;
             label7.Text = "Sound";
             // 
             // label8
             // 
             label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label8.BackColor = SystemColors.ActiveCaptionText;
-            label8.Font = new Font("Segoe UI", 11F);
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Odor Mean Chey", 11.25F);
             label8.ForeColor = Color.White;
-            label8.Location = new Point(20, 87);
+            label8.Location = new Point(18, 65);
             label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(128, 39);
+            label8.Size = new Size(112, 29);
             label8.TabIndex = 12;
             label8.Text = "Display";
             // 
             // label9
             // 
             label9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label9.BackColor = SystemColors.ActiveCaptionText;
-            label9.Font = new Font("Segoe UI", 11F);
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Odor Mean Chey", 11.25F);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(20, 119);
+            label9.Location = new Point(18, 94);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(128, 39);
+            label9.Size = new Size(112, 29);
             label9.TabIndex = 11;
             label9.Text = "Language";
             // 
             // label10
             // 
             label10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label10.BackColor = SystemColors.ActiveCaptionText;
-            label10.Font = new Font("Segoe UI", 11F);
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Odor Mean Chey", 11.25F);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(20, 48);
+            label10.Location = new Point(18, 36);
             label10.Margin = new Padding(4, 0, 4, 0);
             label10.Name = "label10";
-            label10.Size = new Size(128, 39);
+            label10.Size = new Size(112, 29);
             label10.TabIndex = 10;
             label10.Text = "Profile Picture";
             // 
             // label11
             // 
             label11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label11.BackColor = SystemColors.ActiveCaptionText;
-            label11.Font = new Font("Segoe UI", 11F);
+            label11.BackColor = Color.Transparent;
+            label11.Font = new Font("Odor Mean Chey", 11.25F);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(20, 9);
+            label11.Location = new Point(18, 7);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
-            label11.Size = new Size(151, 39);
+            label11.Size = new Size(132, 29);
             label11.TabIndex = 9;
             label11.Text = "Password";
             label11.Click += label11_Click_1;
@@ -252,40 +253,32 @@ namespace ISS_Wildcats
             // panel3
             // 
             panel3.AutoSize = true;
+            panel3.BackColor = Color.Transparent;
             panel3.Controls.Add(label11);
             panel3.Controls.Add(label9);
             panel3.Controls.Add(label10);
             panel3.Controls.Add(label7);
             panel3.Controls.Add(label8);
-            panel3.Location = new Point(63, 77);
+            panel3.Location = new Point(51, 71);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(229, 347);
+            panel3.Size = new Size(184, 260);
             panel3.TabIndex = 14;
             panel3.Visible = false;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(316, 15);
-            button1.Name = "button1";
-            button1.Size = new Size(129, 54);
-            button1.TabIndex = 15;
-            button1.Text = "Go Back";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            panel3.Paint += panel3_Paint;
             // 
             // UserControl1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
-            BackColor = SystemColors.ActiveCaptionText;
-            Controls.Add(button1);
+            BackColor = Color.FromArgb(30, 30, 30);
             Controls.Add(panel3);
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "UserControl1";
-            Size = new Size(460, 457);
+            Size = new Size(239, 343);
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
@@ -317,6 +310,5 @@ namespace ISS_Wildcats
         private Label label10;
         private Label label11;
         private Panel panel3;
-        private Button button1;
     }
 }

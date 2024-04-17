@@ -92,7 +92,7 @@ namespace ISS_Wildcats
             // 
             button1.Location = new Point(28, 24);
             button1.Name = "button1";
-            button1.Size = new Size(164, 35);
+            button1.Size = new Size(164, 43);
             button1.TabIndex = 0;
             button1.Text = "Home";
             button1.UseVisualStyleBackColor = true;
@@ -102,14 +102,14 @@ namespace ISS_Wildcats
             // 
             textBox1.Location = new Point(222, 31);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(640, 36);
+            textBox1.Size = new Size(640, 31);
             textBox1.TabIndex = 1;
             // 
             // button2
             // 
             button2.Location = new Point(905, 24);
             button2.Name = "button2";
-            button2.Size = new Size(75, 35);
+            button2.Size = new Size(75, 43);
             button2.TabIndex = 2;
             button2.Text = "Login";
             button2.UseVisualStyleBackColor = true;
@@ -130,7 +130,7 @@ namespace ISS_Wildcats
             // 
             button6.Location = new Point(466, 13);
             button6.Name = "button6";
-            button6.Size = new Size(39, 23);
+            button6.Size = new Size(52, 34);
             button6.TabIndex = 3;
             button6.Text = "Like";
             button6.UseVisualStyleBackColor = true;
@@ -138,18 +138,18 @@ namespace ISS_Wildcats
             // 
             // button5
             // 
-            button5.Location = new Point(339, 13);
+            button5.Location = new Point(366, 13);
             button5.Name = "button5";
-            button5.Size = new Size(50, 23);
+            button5.Size = new Size(64, 34);
             button5.TabIndex = 2;
             button5.Text = "Skip";
             button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(183, 13);
+            button4.Location = new Point(162, 13);
             button4.Name = "button4";
-            button4.Size = new Size(41, 23);
+            button4.Size = new Size(62, 34);
             button4.TabIndex = 1;
             button4.Text = "Back";
             button4.UseVisualStyleBackColor = true;
@@ -159,7 +159,7 @@ namespace ISS_Wildcats
             // 
             button3.Location = new Point(265, 13);
             button3.Name = "button3";
-            button3.Size = new Size(38, 23);
+            button3.Size = new Size(66, 34);
             button3.TabIndex = 0;
             button3.Text = "Play";
             button3.UseVisualStyleBackColor = true;
@@ -213,7 +213,7 @@ namespace ISS_Wildcats
             label8.AutoSize = true;
             label8.Location = new Point(3, 135);
             label8.Name = "label8";
-            label8.Size = new Size(176, 30);
+            label8.Size = new Size(147, 25);
             label8.TabIndex = 1;
             label8.Text = "Song title / Artist";
             // 
@@ -241,7 +241,7 @@ namespace ISS_Wildcats
             label7.AutoSize = true;
             label7.Location = new Point(3, 135);
             label7.Name = "label7";
-            label7.Size = new Size(176, 30);
+            label7.Size = new Size(147, 25);
             label7.TabIndex = 1;
             label7.Text = "Song title / Artist";
             // 
@@ -269,7 +269,7 @@ namespace ISS_Wildcats
             label6.AutoSize = true;
             label6.Location = new Point(3, 135);
             label6.Name = "label6";
-            label6.Size = new Size(176, 30);
+            label6.Size = new Size(147, 25);
             label6.TabIndex = 1;
             label6.Text = "Song title / Artist";
             // 
@@ -297,7 +297,7 @@ namespace ISS_Wildcats
             label5.AutoSize = true;
             label5.Location = new Point(3, 135);
             label5.Name = "label5";
-            label5.Size = new Size(176, 30);
+            label5.Size = new Size(147, 25);
             label5.TabIndex = 1;
             label5.Text = "Song title / Artist";
             // 
@@ -325,7 +325,7 @@ namespace ISS_Wildcats
             label4.AutoSize = true;
             label4.Location = new Point(3, 135);
             label4.Name = "label4";
-            label4.Size = new Size(176, 30);
+            label4.Size = new Size(147, 25);
             label4.TabIndex = 1;
             label4.Text = "Song title / Artist";
             // 
@@ -353,7 +353,7 @@ namespace ISS_Wildcats
             label3.AutoSize = true;
             label3.Location = new Point(3, 135);
             label3.Name = "label3";
-            label3.Size = new Size(176, 30);
+            label3.Size = new Size(147, 25);
             label3.TabIndex = 1;
             label3.Text = "Song title / Artist";
             // 
@@ -381,7 +381,7 @@ namespace ISS_Wildcats
             label2.AutoSize = true;
             label2.Location = new Point(3, 135);
             label2.Name = "label2";
-            label2.Size = new Size(176, 30);
+            label2.Size = new Size(147, 25);
             label2.TabIndex = 1;
             label2.Text = "Song title / Artist";
             // 
@@ -409,7 +409,7 @@ namespace ISS_Wildcats
             label1.AutoSize = true;
             label1.Location = new Point(3, 135);
             label1.Name = "label1";
-            label1.Size = new Size(176, 30);
+            label1.Size = new Size(147, 25);
             label1.TabIndex = 1;
             label1.Text = "Song title / Artist";
             label1.Click += label1_Click;
@@ -435,7 +435,7 @@ namespace ISS_Wildcats
             // 
             button7.Location = new Point(986, 24);
             button7.Name = "button7";
-            button7.Size = new Size(87, 35);
+            button7.Size = new Size(87, 43);
             button7.TabIndex = 5;
             button7.Text = "Profile";
             button7.UseVisualStyleBackColor = true;
@@ -443,20 +443,20 @@ namespace ISS_Wildcats
             // 
             // userControl11
             // 
-            userControl11.AutoSize = true;
-            userControl11.BackColor = SystemColors.ActiveCaptionText;
+            userControl11.BackColor = Color.FromArgb(30, 30, 30);
             userControl11.Dock = DockStyle.Right;
-            userControl11.Location = new Point(510, 0);
+            userControl11.Location = new Point(842, 0);
+            userControl11.Margin = new Padding(3, 2, 3, 2);
             userControl11.Name = "userControl11";
-            userControl11.Size = new Size(690, 675);
+            userControl11.Size = new Size(253, 616);
             userControl11.TabIndex = 6;
             userControl11.Visible = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1200, 675);
+            ClientSize = new Size(1095, 616);
             Controls.Add(userControl11);
             Controls.Add(button7);
             Controls.Add(splitContainer1);
