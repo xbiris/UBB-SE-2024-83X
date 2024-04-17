@@ -264,7 +264,7 @@ namespace ISS_Wildcats
             panel9.BorderStyle = BorderStyle.FixedSingle;
             panel9.Controls.Add(label8);
             panel9.Controls.Add(pictureBox8);
-            panel9.Location = new Point(22, 218);
+            panel9.Location = new Point(22, 221);
             panel9.Name = "panel9";
             panel9.Size = new Size(156, 164);
             panel9.TabIndex = 2;
@@ -326,7 +326,7 @@ namespace ISS_Wildcats
             panel7.BorderStyle = BorderStyle.FixedSingle;
             panel7.Controls.Add(label6);
             panel7.Controls.Add(pictureBox6);
-            panel7.Location = new Point(385, 224);
+            panel7.Location = new Point(385, 221);
             panel7.Name = "panel7";
             panel7.Size = new Size(156, 164);
             panel7.TabIndex = 2;
@@ -357,7 +357,7 @@ namespace ISS_Wildcats
             panel6.BorderStyle = BorderStyle.FixedSingle;
             panel6.Controls.Add(label5);
             panel6.Controls.Add(pictureBox5);
-            panel6.Location = new Point(565, 224);
+            panel6.Location = new Point(565, 221);
             panel6.Name = "panel6";
             panel6.Size = new Size(156, 164);
             panel6.TabIndex = 2;
