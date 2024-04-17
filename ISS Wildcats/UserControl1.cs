@@ -46,7 +46,7 @@ namespace ISS_Wildcats
 
             if (sender is Label label)
             {
-                label.Font = new Font("Odor Mean Chey",14);
+                label.Font = new Font("Odor Mean Chey", 14);
             }
 
         }
@@ -69,6 +69,14 @@ namespace ISS_Wildcats
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if(this.Visible == true)
+            {
+                this.Visible = false;
+            }
         }
     }
 }

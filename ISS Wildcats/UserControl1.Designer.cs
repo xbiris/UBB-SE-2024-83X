@@ -29,6 +29,7 @@ namespace ISS_Wildcats
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
             panel1 = new Panel();
             panel2 = new Panel();
             label6 = new Label();
@@ -46,9 +47,11 @@ namespace ISS_Wildcats
             label10 = new Label();
             label11 = new Label();
             panel3 = new Panel();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -163,7 +166,7 @@ namespace ISS_Wildcats
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Odor Mean Chey", 11.25F);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(51, 40);
+            label1.Location = new Point(20, 40);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(200, 29);
@@ -176,10 +179,10 @@ namespace ISS_Wildcats
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Odor Mean Chey", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(39, 3);
+            label2.Location = new Point(9, 2);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(196, 48);
+            label2.Size = new Size(172, 48);
             label2.TabIndex = 7;
             label2.Text = "Hello Dude";
             label2.Click += label2_Click;
@@ -259,7 +262,7 @@ namespace ISS_Wildcats
             panel3.Controls.Add(label10);
             panel3.Controls.Add(label7);
             panel3.Controls.Add(label8);
-            panel3.Location = new Point(51, 71);
+            panel3.Location = new Point(36, 71);
             panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
             panel3.Size = new Size(184, 260);
@@ -267,21 +270,34 @@ namespace ISS_Wildcats
             panel3.Visible = false;
             panel3.Paint += panel3_Paint;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(246, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(28, 28);
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // UserControl1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 30, 30);
+            Controls.Add(pictureBox1);
             Controls.Add(panel3);
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "UserControl1";
-            Size = new Size(239, 343);
+            Size = new Size(289, 343);
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -310,5 +326,6 @@ namespace ISS_Wildcats
         private Label label10;
         private Label label11;
         private Panel panel3;
+        private PictureBox pictureBox1;
     }
 }
