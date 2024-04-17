@@ -5,7 +5,7 @@ namespace ISS_Wildcats
         public Form1()
         {
             InitializeComponent();
-            
+
         }
 
         private void labelAccount_Click(object sender, EventArgs e)
@@ -56,7 +56,12 @@ namespace ISS_Wildcats
         private void button7_Click(object sender, EventArgs e)
         {
             this.userControl11.Visible = true;
-            
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -90,9 +90,10 @@ namespace ISS_Wildcats
             // 
             // button1
             // 
+            button1.Font = new Font("Odor Mean Chey", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.Location = new Point(28, 24);
             button1.Name = "button1";
-            button1.Size = new Size(164, 43);
+            button1.Size = new Size(123, 43);
             button1.TabIndex = 0;
             button1.Text = "Home";
             button1.UseVisualStyleBackColor = true;
@@ -100,13 +101,14 @@ namespace ISS_Wildcats
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(222, 31);
+            textBox1.Location = new Point(183, 31);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(640, 31);
+            textBox1.Size = new Size(679, 31);
             textBox1.TabIndex = 1;
             // 
             // button2
             // 
+            button2.Font = new Font("Odor Mean Chey", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.Location = new Point(905, 24);
             button2.Name = "button2";
             button2.Size = new Size(75, 43);
@@ -192,7 +194,7 @@ namespace ISS_Wildcats
             // 
             // panel10
             // 
-            panel10.BorderStyle = BorderStyle.FixedSingle;
+            panel10.BackColor = Color.FromArgb(105, 150, 155);
             panel10.Location = new Point(0, 0);
             panel10.Name = "panel10";
             panel10.Size = new Size(178, 462);
@@ -211,6 +213,7 @@ namespace ISS_Wildcats
             // label8
             // 
             label8.AutoSize = true;
+            label8.ForeColor = Color.White;
             label8.Location = new Point(3, 135);
             label8.Name = "label8";
             label8.Size = new Size(147, 25);
@@ -239,6 +242,7 @@ namespace ISS_Wildcats
             // label7
             // 
             label7.AutoSize = true;
+            label7.ForeColor = Color.White;
             label7.Location = new Point(3, 135);
             label7.Name = "label7";
             label7.Size = new Size(147, 25);
@@ -267,6 +271,7 @@ namespace ISS_Wildcats
             // label6
             // 
             label6.AutoSize = true;
+            label6.ForeColor = Color.White;
             label6.Location = new Point(3, 135);
             label6.Name = "label6";
             label6.Size = new Size(147, 25);
@@ -295,6 +300,7 @@ namespace ISS_Wildcats
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = Color.White;
             label5.Location = new Point(3, 135);
             label5.Name = "label5";
             label5.Size = new Size(147, 25);
@@ -323,6 +329,7 @@ namespace ISS_Wildcats
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = Color.White;
             label4.Location = new Point(3, 135);
             label4.Name = "label4";
             label4.Size = new Size(147, 25);
@@ -351,6 +358,7 @@ namespace ISS_Wildcats
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.White;
             label3.Location = new Point(3, 135);
             label3.Name = "label3";
             label3.Size = new Size(147, 25);
@@ -379,6 +387,7 @@ namespace ISS_Wildcats
             // label2
             // 
             label2.AutoSize = true;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(3, 135);
             label2.Name = "label2";
             label2.Size = new Size(147, 25);
@@ -407,6 +416,7 @@ namespace ISS_Wildcats
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(3, 135);
             label1.Name = "label1";
             label1.Size = new Size(147, 25);
@@ -433,9 +443,10 @@ namespace ISS_Wildcats
             // 
             // button7
             // 
+            button7.Font = new Font("Odor Mean Chey", 12.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button7.Location = new Point(986, 24);
             button7.Name = "button7";
-            button7.Size = new Size(87, 43);
+            button7.Size = new Size(75, 43);
             button7.TabIndex = 5;
             button7.Text = "Profile";
             button7.UseVisualStyleBackColor = true;
@@ -445,10 +456,10 @@ namespace ISS_Wildcats
             // 
             userControl11.BackColor = Color.FromArgb(30, 30, 30);
             userControl11.Dock = DockStyle.Right;
-            userControl11.Location = new Point(842, 0);
+            userControl11.Location = new Point(1067, 0);
             userControl11.Margin = new Padding(3, 2, 3, 2);
             userControl11.Name = "userControl11";
-            userControl11.Size = new Size(253, 616);
+            userControl11.Size = new Size(28, 616);
             userControl11.TabIndex = 6;
             userControl11.Visible = false;
             // 
@@ -456,6 +467,7 @@ namespace ISS_Wildcats
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(1095, 616);
             Controls.Add(userControl11);
             Controls.Add(button7);
@@ -468,6 +480,7 @@ namespace ISS_Wildcats
             Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
