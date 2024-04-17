@@ -28,14 +28,15 @@ namespace ISS_Wildcats
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             textBox1 = new TextBox();
             button2 = new Button();
             panel1 = new Panel();
+            pictureBox9 = new PictureBox();
             button6 = new Button();
             button5 = new Button();
             button4 = new Button();
-            button3 = new Button();
             splitContainer1 = new SplitContainer();
             panel10 = new Panel();
             panel9 = new Panel();
@@ -66,6 +67,7 @@ namespace ISS_Wildcats
             button7 = new Button();
             userControl11 = new UserControl1();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -118,15 +120,27 @@ namespace ISS_Wildcats
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(105, 150, 155);
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
             panel1.Location = new Point(304, 541);
             panel1.Name = "panel1";
             panel1.Size = new Size(558, 64);
             panel1.TabIndex = 3;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackgroundImage = (Image)resources.GetObject("pictureBox9.BackgroundImage");
+            pictureBox9.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox9.Location = new Point(229, 13);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(39, 34);
+            pictureBox9.TabIndex = 4;
+            pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
             // 
             // button6
             // 
@@ -140,7 +154,7 @@ namespace ISS_Wildcats
             // 
             // button5
             // 
-            button5.Location = new Point(366, 13);
+            button5.Location = new Point(337, 13);
             button5.Name = "button5";
             button5.Size = new Size(64, 34);
             button5.TabIndex = 2;
@@ -149,23 +163,13 @@ namespace ISS_Wildcats
             // 
             // button4
             // 
-            button4.Location = new Point(162, 13);
+            button4.Location = new Point(81, 13);
             button4.Name = "button4";
             button4.Size = new Size(62, 34);
             button4.TabIndex = 1;
             button4.Text = "Back";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(265, 13);
-            button3.Name = "button3";
-            button3.Size = new Size(66, 34);
-            button3.TabIndex = 0;
-            button3.Text = "Play";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
             // 
             // splitContainer1
             // 
@@ -482,6 +486,7 @@ namespace ISS_Wildcats
             Text = "Form1";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
@@ -520,7 +525,6 @@ namespace ISS_Wildcats
         private TextBox textBox1;
         private Button button2;
         private Panel panel1;
-        private Button button3;
         private Button button4;
         private Button button6;
         private Button button5;
@@ -553,5 +557,6 @@ namespace ISS_Wildcats
         private Panel panel11;
         private Button button7;
         private UserControl1 userControl11;
+        private PictureBox pictureBox9;
     }
 }
