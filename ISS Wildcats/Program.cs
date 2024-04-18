@@ -10,6 +10,7 @@ namespace ISS_Wildcats
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+            //Test
             ApplicationConfiguration.Initialize();
             Form1 FormInitial = new Form1();
 //            FormInitial.Resize += (sender, e) =>
