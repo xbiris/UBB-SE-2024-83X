@@ -132,6 +132,46 @@ public class Playlist
             }
         }
     }
+    
+    
+    public void AddSong(int songID)
+    {
+        // Check if the song is already in the playlist
+        if (Array.IndexOf(SongIDs, songID) == -1)
+        {
+            // Add the new song ID to the SongIDs array
+            int[] updatedSongIDs = new int[SongIDs.Length + 1];
+            Array.Copy(SongIDs, updatedSongIDs, SongIDs.Length);
+            updatedSongIDs[updatedSongIDs.Length - 1] = songID;
+            SongIDs = updatedSongIDs;
 
+            Update();
+        }
+        else
+        {
+            throw new ArgumentException("Song already exists in the playlist.");
+        }
+    }
+
+    public void RemoveSong(int songID)
+    {
+        // Check if the song exists in the playlist
+        int index = Array.IndexOf(SongIDs, songID);
+        if (index != -1)
+        {
+            // Remove the song from the SongIDs array
+            int[] updatedSongIDs = new int[SongIDs.Length - 1];
+            Array.Copy(SongIDs, 0, updatedSongIDs, 0, index);
+            Array.Copy(SongIDs, index + 1, updatedSongIDs, index, SongIDs.Length - index - 1);
+            SongIDs = updatedSongIDs;
+
+            Update();
+        }
+        else
+        {
+            throw new ArgumentException("Song does not exist in the playlist.");
+        }
+    }
+    
     
 }
