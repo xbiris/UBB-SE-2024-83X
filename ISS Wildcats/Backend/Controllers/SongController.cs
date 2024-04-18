@@ -28,7 +28,7 @@ public class SongController
         }
         catch (Exception e)
         {
-            Console.WriteLine("pfhahhaaahahahahhhha");
+            Console.WriteLine("Unable to play song.");
         }
     }
 
