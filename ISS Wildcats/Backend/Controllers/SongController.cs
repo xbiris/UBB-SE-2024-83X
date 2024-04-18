@@ -4,26 +4,26 @@ using Mysqlx.Expect;
 namespace ISS_Wildcats.Backend.Controllers;
 
 using System;
-using System.Media;
+using System.Windows.Media;
 
 public class SongController
 {
     private Song song;
     private TimeSpan currentPosition;
-    private SoundPlayer player;
+    private MediaPlayer player;
 
     public SongController(string connectionString, int songID)
     {
         song = new Song(connectionString, songID);
         currentPosition = TimeSpan.Zero;
-        player = new SoundPlayer();
+        player = new MediaPlayer();
     }
 
     public void Play()
     {
         try
         {
-            player = new SoundPlayer(song.Url);
+            player.Open(new Uri(song.Url));
             player.Play();
         }
         catch (Exception e)

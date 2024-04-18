@@ -1,9 +1,13 @@
+using ISS_Wildcats.Backend.Controllers;
+using System.Windows;
 using System.Windows.Forms;
 
 namespace ISS_Wildcats
 {
     public partial class Form1 : Form
     {
+        SongController songController = new SongController("Server = localhost; Port = 3306; Database = spookify; Uid = root; Pwd = ''; ", 1);
+        bool playing = false;
         public Form1()
         {
             InitializeComponent();
@@ -68,6 +72,17 @@ namespace ISS_Wildcats
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
+            if (!playing)
+            {
+                songController.Play();
+
+                playing = true;
+            }
+            else
+            {
+                songController.Pause();
+                playing = false;
+            }
 
         }
 

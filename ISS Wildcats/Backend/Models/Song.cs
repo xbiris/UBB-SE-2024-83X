@@ -49,6 +49,7 @@ public class Song
                         Genre = reader["Genre"].ToString();
                         Duration = Convert.ToInt32(reader["Duration"]);
                         ReleaseDate = Convert.ToDateTime(reader["ReleaseDate"]);
+                        Url = reader["Url"].ToString();
                     }
                     else
                     {
