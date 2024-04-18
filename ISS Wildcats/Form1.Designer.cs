@@ -212,6 +212,7 @@ namespace ISS_Wildcats
             panel10.Name = "panel10";
             panel10.Size = new Size(178, 462);
             panel10.TabIndex = 0;
+            panel10.Paint += panel10_Paint;
             // 
             // panel2
             // 
@@ -222,6 +223,7 @@ namespace ISS_Wildcats
             panel2.Name = "panel2";
             panel2.Size = new Size(156, 164);
             panel2.TabIndex = 0;
+            panel2.Paint += panel2_Paint;
             // 
             // label1
             // 
@@ -244,6 +246,7 @@ namespace ISS_Wildcats
             pictureBox1.Size = new Size(150, 129);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // panel11
             // 
@@ -413,6 +416,7 @@ namespace ISS_Wildcats
             pictureBox4.Size = new Size(150, 129);
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // panel4
             // 
@@ -444,6 +448,7 @@ namespace ISS_Wildcats
             pictureBox3.Size = new Size(150, 129);
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // panel3
             // 
@@ -454,6 +459,7 @@ namespace ISS_Wildcats
             panel3.Name = "panel3";
             panel3.Size = new Size(156, 164);
             panel3.TabIndex = 2;
+            panel3.Paint += panel3_Paint;
             // 
             // label2
             // 
@@ -475,6 +481,7 @@ namespace ISS_Wildcats
             pictureBox2.Size = new Size(150, 129);
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // button7
             // 
@@ -491,10 +498,10 @@ namespace ISS_Wildcats
             // 
             userControl11.BackColor = Color.FromArgb(30, 30, 30);
             userControl11.Dock = DockStyle.Right;
-            userControl11.Location = new Point(817, 0);
+            userControl11.Location = new Point(1035, 0);
             userControl11.Margin = new Padding(3, 2, 3, 2);
             userControl11.Name = "userControl11";
-            userControl11.Size = new Size(278, 616);
+            userControl11.Size = new Size(60, 616);
             userControl11.TabIndex = 6;
             userControl11.Visible = false;
             // 

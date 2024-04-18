@@ -6,6 +6,7 @@ namespace ISS_Wildcats
 {
     public partial class Form1 : Form
     {
+        readonly string connString = "Server = localhost; Port = 3306; Database = spookify; Uid = root; Pwd = ''; ";
         SongController songController = new SongController("Server = localhost; Port = 3306; Database = spookify; Uid = root; Pwd = ''; ", 1);
         bool playing = false;
         public Form1()
@@ -94,6 +95,89 @@ namespace ISS_Wildcats
         private void panel12_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (!playing)
+            {
+                songController = new SongController(connString, 1);
+                songController.Play();
+                playing = true;
+            }
+            else
+            {
+                songController.Pause();
+                songController = new SongController(connString, 1);
+                songController.Play();
+                playing = true;
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (!playing)
+            {
+                songController = new SongController(connString, 2);
+                songController.Play();
+                playing = true;
+            }
+            else
+            {
+                songController.Pause();
+                songController = new SongController(connString, 2);
+                songController.Play();
+                playing = true;
+            }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (!playing)
+            {
+                songController = new SongController(connString, 3);
+                songController.Play();
+                playing = true;
+            }
+            else
+            {
+                songController.Pause();
+                songController = new SongController(connString, 3);
+                songController.Play();
+                playing = true;
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            if (!playing)
+            {
+                songController = new SongController(connString, 4);
+                songController.Play();
+                playing = true;
+            }
+            else
+            {
+                songController.Pause();
+                songController = new SongController(connString, 4);
+                songController.Play();
+                playing = true;
+            }
         }
     }
 }
