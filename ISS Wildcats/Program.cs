@@ -1,13 +1,14 @@
+using ISS_Wildcats.Backend.Models;
+
 namespace ISS_Wildcats
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
-        [STAThread]
         static void Main()
         {
+            string connectionString = "Server=localhost;Port=3306;Database=spookify;Uid=root;Pwd='';";
+            Song song = new Song(connectionString, 1);
+            Console.WriteLine(song.Url);
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             //Test
