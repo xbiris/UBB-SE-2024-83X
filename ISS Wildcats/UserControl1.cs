@@ -6,27 +6,24 @@ namespace ISS_Wildcats
 {
     public partial class UserControl1 : UserControl
     {
+        PasswordForm passwordForm = new PasswordForm();
+        UserNameForm userNameForm = new UserNameForm();
         public UserControl1()
         {
             InitializeComponent();
             this.Visible = false;
-
             // Attach event handlers for all labels
 
             // Attach special hover and leave event handlers for labels 1, 7, 8, 9, 10, and 11
             label1.MouseHover += SpecialLabel_MouseHover;
             label1.MouseLeave += SpecialLabel_MouseLeave;
-            label7.MouseHover += SpecialLabel_MouseHover;
-            label7.MouseLeave += SpecialLabel_MouseLeave;
-            label8.MouseHover += SpecialLabel_MouseHover;
-            label8.MouseLeave += SpecialLabel_MouseLeave;
-            label9.MouseHover += SpecialLabel_MouseHover;
-            label9.MouseLeave += SpecialLabel_MouseLeave;
             label10.MouseHover += SpecialLabel_MouseHover;
             label10.MouseLeave += SpecialLabel_MouseLeave;
             label11.MouseHover += SpecialLabel_MouseHover;
             label11.MouseLeave += SpecialLabel_MouseLeave;
             this.Dock = DockStyle.Right;
+            passwordForm.Visible = false;
+            userNameForm.Visible = false;
         }
 
 
@@ -63,6 +60,10 @@ namespace ISS_Wildcats
 
         private void label11_Click_1(object sender, EventArgs e)
         {
+            if (passwordForm.Visible == false)
+            {
+                passwordForm.Visible = true;
+            }
 
         }
 
@@ -73,9 +74,22 @@ namespace ISS_Wildcats
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if(this.Visible == true)
+            if (this.Visible == true)
             {
                 this.Visible = false;
+            }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            if(userNameForm.Visible == false)
+            {
+                userNameForm.Visible = true;
             }
         }
     }

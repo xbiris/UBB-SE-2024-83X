@@ -41,9 +41,6 @@ namespace ISS_Wildcats
             labelWellcome = new Label();
             label1 = new Label();
             label2 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
             label10 = new Label();
             label11 = new Label();
             panel3 = new Panel();
@@ -187,45 +184,6 @@ namespace ISS_Wildcats
             label2.Text = "Hello Dude";
             label2.Click += label2_Click;
             // 
-            // label7
-            // 
-            label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label7.BackColor = Color.Transparent;
-            label7.Font = new Font("Odor Mean Chey", 11.25F);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(18, 123);
-            label7.Margin = new Padding(4, 0, 4, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(112, 29);
-            label7.TabIndex = 13;
-            label7.Text = "Sound";
-            // 
-            // label8
-            // 
-            label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Odor Mean Chey", 11.25F);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(18, 65);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(112, 29);
-            label8.TabIndex = 12;
-            label8.Text = "Display";
-            // 
-            // label9
-            // 
-            label9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Odor Mean Chey", 11.25F);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(18, 94);
-            label9.Margin = new Padding(4, 0, 4, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(112, 29);
-            label9.TabIndex = 11;
-            label9.Text = "Language";
-            // 
             // label10
             // 
             label10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
@@ -237,7 +195,8 @@ namespace ISS_Wildcats
             label10.Name = "label10";
             label10.Size = new Size(112, 29);
             label10.TabIndex = 10;
-            label10.Text = "Profile Picture";
+            label10.Text = "User Name";
+            label10.Click += label10_Click;
             // 
             // label11
             // 
@@ -258,10 +217,7 @@ namespace ISS_Wildcats
             panel3.AutoSize = true;
             panel3.BackColor = Color.Transparent;
             panel3.Controls.Add(label11);
-            panel3.Controls.Add(label9);
             panel3.Controls.Add(label10);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(label8);
             panel3.Location = new Point(36, 71);
             panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
@@ -320,9 +276,6 @@ namespace ISS_Wildcats
         private Label labelWellcome;
         private Label label1;
         private Label label2;
-        private Label label7;
-        private Label label8;
-        private Label label9;
         private Label label10;
         private Label label11;
         private Panel panel3;
