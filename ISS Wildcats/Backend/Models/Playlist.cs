@@ -28,13 +28,13 @@ public class Playlist
 		using (var connection = new SqlConnection(connectionString))
 		{
 			connection.Open();
-			var query = "SELECT Playlist.id, Playlist.playlist_name, Playlist.creator_id, PlaylistSong.song_id " +
-						"FROM Playlist " +
-						"LEFT JOIN PlaylistSong ON Playlist.id = PlaylistSong.playlist_id " +
-						"WHERE Playlist.id = @PlaylistID";
+			var query = "SELECT Album.id as id, Album.title, Album.creator_id, Song.id as song_id " +
+						"FROM Album " +
+                        "LEFT JOIN Song ON Album.id = Song.album_id " +
+                        "WHERE Album.id = @AlbumID";
 			using (var cmd = new SqlCommand(query, connection))
 			{
-				cmd.Parameters.AddWithValue("@PlaylistID", playlistID);
+				cmd.Parameters.AddWithValue("@AlbumID", playlistID);
 				using (var reader = cmd.ExecuteReader())
 				{
 					bool isFirstRow = true;
@@ -43,7 +43,7 @@ public class Playlist
 						if (isFirstRow)
 						{
 							PlaylistID = reader.GetInt32(reader.GetOrdinal("id"));
-							Name = reader.GetString(reader.GetOrdinal("playlist_name"));
+							Name = reader.GetString(reader.GetOrdinal("title"));
 							CreatorID = reader.GetInt32(reader.GetOrdinal("creator_id"));
 							isFirstRow = false;
 						}
@@ -77,7 +77,7 @@ public class Playlist
 		}
 	}
 
-	public void RemoveSong(int songID)
+    public void RemoveSong(int songID)
 	{
 		using (var connection = new SqlConnection(connectionString))
 		{
@@ -93,16 +93,16 @@ public class Playlist
 		}
 	}
 
-	public void Update()
+	public void Update(string newName)
 	{
 		using (var connection = new SqlConnection(connectionString))
 		{
 			connection.Open();
-			var query = "UPDATE Playlist SET playlist_name = @Name WHERE id = @PlaylistID";
+			var query = "UPDATE Album SET title = @Name WHERE id = @AlbumID";
 			using (var cmd = new SqlCommand(query, connection))
 			{
-				cmd.Parameters.AddWithValue("@Name", Name);
-				cmd.Parameters.AddWithValue("@PlaylistID", PlaylistID);
+				cmd.Parameters.AddWithValue("@Name", newName);
+				cmd.Parameters.AddWithValue("@AlbumID", PlaylistID);
 				cmd.ExecuteNonQuery();
 			}
 		}
@@ -113,8 +113,8 @@ public class Playlist
 		using (var connection = new SqlConnection(connectionString))
 		{
 			connection.Open();
-			var query = "DELETE FROM PlaylistSong WHERE playlist_id = @PlaylistID; " +
-						"DELETE FROM Playlist WHERE id = @PlaylistID";
+			var query = "DELETE FROM Song WHERE album_id = @PlaylistID; " +
+						"DELETE FROM Album WHERE id = @PlaylistID";
 			using (var cmd = new SqlCommand(query, connection))
 			{
 				cmd.Parameters.AddWithValue("@PlaylistID", PlaylistID);
