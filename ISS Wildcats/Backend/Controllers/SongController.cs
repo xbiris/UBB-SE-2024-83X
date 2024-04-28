@@ -1,29 +1,31 @@
 using ISS_Wildcats.Backend.Models;
-using Mysqlx.Expect;
 
 namespace ISS_Wildcats.Backend.Controllers;
 
+using ISS_Wildcats.Backend.Repos;
 using System;
 using System.Windows.Media;
 
 public class SongController
 {
-    private Song song;
+    private int songId;
+    private SongRepo songRepo;  
     private TimeSpan currentPosition;
     private MediaPlayer player;
 
-    public SongController(string connectionString, int songID)
+    public SongController(int songID)
     {
-        song = new Song(connectionString, songID);
+        this.songId = songID;
         currentPosition = TimeSpan.Zero;
         player = new MediaPlayer();
+        songRepo = new SongRepo();
     }
 
     public void Play()
     {
         try
         {
-            player.Open(new Uri(song.Url));
+            player.Open(new Uri(songRepo.GetSongById(songId).songUrl));
             player.Play();
         }
         catch (Exception e)

@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ISS_Wildcats.Backend.Models;
+﻿using ISS_Wildcats.Backend.Models;
+using ISS_Wildcats.Backend.Service;
 
 namespace ISS_Wildcats.Backend.Controllers
 {
     public class UserController
     {
         private User user;
-        private SongController songController;
+        private SongService songService;
 
-        public UserController(string connectionString, int userID, string songConnectionString, int songID)
+        public UserController(string connectionString, int userID, int songID)
         {
             user = new User(connectionString, userID);
-            songController = new SongController(songConnectionString, songID);
+			songService = new SongService(songID);
         }
 
         // User management methods
@@ -50,17 +46,17 @@ namespace ISS_Wildcats.Backend.Controllers
 
         public void PlaySong()
         {
-            songController.Play();
+			songService.Play();
         }
 
         public void PauseSong()
         {
-            songController.Pause();
+			songService.Pause();
         }
 
         public void SeekSong(int seconds)
         {
-            songController.Seek(seconds);
+			songService.Seek(seconds);
         }
     }
 }
