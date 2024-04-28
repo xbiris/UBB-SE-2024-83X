@@ -4,7 +4,7 @@ namespace ISS_Wildcats
 {
     internal static class Program
     {
-        static void Maine()
+        static void Main()
         {
             Song song = new Song("titlu", "url", 0, 0, 0);
             Console.WriteLine(song.songUrl);
