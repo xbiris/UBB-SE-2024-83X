@@ -9,7 +9,6 @@ public class Playlist
 	public string Name { get; set; }
 	public List<int> SongIDs { get; set; } = new List<int>();
 	public int CreatorID { get; set; }
-
 	private readonly string connectionString;
 
 	public Playlist(string connectionString)

@@ -16,6 +16,8 @@ namespace ISS_Wildcats.Backend.Models
         public DateTime BirthDate { get; set; }
         public string Password { get; set; }
 
+        public string? Username { get; internal set; }
+      
         private readonly string connectionString;
         public User(string connectionString)
         {
