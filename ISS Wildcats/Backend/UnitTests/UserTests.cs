@@ -15,7 +15,7 @@ namespace ISS_Wildcats.Backend.UnitTests
         public void TestUserClass()
         {
             // arrange
-            string connectionString = "Data Source=DESKTOP-LOCA7ND;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
+            string connectionString = "Data Source=LAPTOPDAVID\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
             int idUser1 = 1;
             string nameUser1 = "John Doe";
             string emailUser1 = "johndoe@example.com";
@@ -24,7 +24,7 @@ namespace ISS_Wildcats.Backend.UnitTests
 
             // act
             var user1 = new User(connectionString, idUser1);
-            var user2 = new User(connectionString);
+            var user2 = new User();
 
             // assert
             Assert.NotNull(user1);

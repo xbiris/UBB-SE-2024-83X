@@ -28,7 +28,7 @@ namespace ISS_Wildcats.Backend.Repos
                 {
                     if (reader.Read())
                     {
-                        user = new User
+                        user = new User()
                         {
                             UserID = (int)reader["id"],
                             Name = (string)reader["fullname"],

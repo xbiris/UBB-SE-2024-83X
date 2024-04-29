@@ -1,5 +1,7 @@
 ﻿using ISS_Wildcats.Backend.Models;
 using ISS_Wildcats.Backend.Repos;
+using ISS_Wildcats.Backend.Service;
+using Moq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +13,109 @@ namespace ISS_Wildcats.Backend.UnitTests
 {
     public class SongRepoTests
     {
-        [Fact]
+		[Fact]
+		public void AddSong_ValidSong_ShouldRetrieveSameSongByTitle()
+		{
+			// Arrange
+			var mockRepo = new Mock<ISongRepo>();
+			var song = new Song("Billie Jean", "http://example.com/song5.mp3", 200, 3);
+
+			mockRepo.Setup(repo => repo.GetSongByTitle("Billie Jean")).Returns(song);
+			var songService = new SongRepoService(mockRepo.Object);
+
+			// Act
+			songService.AddSong(song);
+			var retrievedSong = songService.GetSongByTitle("Billie Jean");
+
+			// Assert
+			Assert.Equal("Billie Jean", retrievedSong.title);
+			Assert.Equal(200, retrievedSong.length);
+			Assert.Equal(3, retrievedSong.albumId);
+		}
+
+		[Fact]
+		public void GetSongById_ValidId_ShouldReturnExpectedSong()
+		{
+			// Arrange
+			var mockRepo = new Mock<ISongRepo>();
+			var expectedSong = new Song("Event Horizon", "http://example.com/song4.mp3", 305, 3);
+
+			mockRepo.Setup(repo => repo.GetSongById(28)).Returns(expectedSong);
+			var songService = new SongRepoService(mockRepo.Object);
+
+			// Act
+			var actualSong = songService.GetSongById(28);
+
+			// Assert
+			Assert.Equal("Event Horizon", actualSong.title);
+			Assert.Equal("http://example.com/song4.mp3", actualSong.songUrl);
+			Assert.Equal(305, actualSong.length);
+			Assert.Equal(3, actualSong.albumId);
+		}
+
+		[Fact]
+		public void GetSongByUrl_ValidUrl_ShouldReturnExpectedSong()
+		{
+			// Arrange
+			var mockRepo = new Mock<ISongRepo>();
+			var song = new Song("Event Horizon", "http://example.com/song4.mp3", 305, 3);
+
+			mockRepo.Setup(repo => repo.GetSongByUrl("http://example.com/song4.mp3")).Returns(song);
+			var songService = new SongRepoService(mockRepo.Object);
+
+			// Act
+			var retrievedSong = songService.GetSongByUrl("http://example.com/song4.mp3");
+
+			// Assert
+			Assert.Equal("Event Horizon", retrievedSong.title);
+			Assert.Equal("http://example.com/song4.mp3", retrievedSong.songUrl);
+			Assert.Equal(305, retrievedSong.length);
+			Assert.Equal(3, retrievedSong.albumId);
+		}
+
+		[Fact]
+		public void DeleteSong_ValidSong_ShouldNotFindSongAfterDeletion()
+		{
+			// Arrange
+			var mockRepo = new Mock<ISongRepo>();
+			var song = new Song("Event Horizon", "http://example.com/song4.mp3", 305, 3);
+
+			mockRepo.Setup(repo => repo.GetSongById(4)).Returns(song);
+			mockRepo.Setup(repo => repo.DeleteSong(song)).Callback(() => mockRepo.Setup(repo => repo.GetSongById(4)).Returns((Song)null));
+			var songService = new SongRepoService(mockRepo.Object);
+
+			// Act
+			songService.DeleteSong(song);
+			var resultSong = songService.GetSongById(4);
+
+			// Assert
+			Assert.Null(resultSong);
+		}
+
+		[Fact]
+		public void GetSongsByCreator_ValidCreator_ShouldReturnSongs()
+		{
+			// Arrange
+			var mockRepo = new Mock<ISongRepo>();
+			var songs = new List<Song> { new Song("Event Horizon", "http://example.com/song4.mp3", 305, 3) };
+
+			mockRepo.Setup(repo => repo.GetSongsByCreator(2)).Returns(songs);
+			var songService = new SongRepoService(mockRepo.Object);
+
+			// Act
+			var songsByCreator = songService.GetSongsByCreator(2);
+
+			// Assert
+			Assert.NotNull(songsByCreator);
+			Assert.NotEmpty(songsByCreator);
+		}
+
+
+		[Fact]
         public void TestSongRepoAddGet()
         {
             // arrange
-            var album = new SongRepo();
+            var songRepo = new SongRepo();
 
             string title = "Billie Jean";
             string songUrl = "http://example.com/song5.mp3";
@@ -23,36 +123,37 @@ namespace ISS_Wildcats.Backend.UnitTests
             int len = 200;
             int albumId = 3;
 
-            var song = new Song(title, songUrl, id, len, albumId);
+            var song = new Song(title, songUrl, len, albumId);
 
             // act
-            album.AddSong(song);
+            songRepo.AddSong(song);
 
             // assert
-            Assert.Equal(album.getSongByTitle(title).title, title);
-            Assert.Equal(album.getSongByTitle(title).length, len);
-            Assert.Equal(album.getSongByTitle(title).albumId, albumId);
+            Assert.Equal(songRepo.GetSongByTitle(title).title, title);
+            Assert.Equal(songRepo.GetSongByTitle(title).length, len);
+            Assert.Equal(songRepo.GetSongByTitle(title).albumId, albumId);
         }
 
         [Fact]
         public void TestGetById()
         {
             // arrange
-            var album = new SongRepo();
+            var songrepo = new SongRepo();
 
             string title = "Event Horizon";
             string songUrl = "http://example.com/song4.mp3";
-            int id = 4;
+            int id = 28;
             int len = 305;
             int albumId = 3;
 
+            songrepo.AddSong(new Song(title, songUrl, len, albumId));
+
             // act
-            var songFromMethod = album.GetSongById(id);
+            var songFromMethod = songrepo.GetSongById(id);
 
             // assert
             Assert.Equal(title, songFromMethod.title);
             Assert.Equal(songUrl, songFromMethod.songUrl);
-            Assert.Equal(id, songFromMethod.id);
             Assert.Equal(len, songFromMethod.length);
             Assert.Equal(albumId, songFromMethod.albumId);
         }
@@ -61,21 +162,20 @@ namespace ISS_Wildcats.Backend.UnitTests
         public void TestGetByUrl()
         {
             // arrange
-            var album = new SongRepo();
+            var songrepo = new SongRepo();
 
             string title = "Event Horizon";
             string songUrl = "http://example.com/song4.mp3";
-            int id = 4;
+            int id = 28;
             int len = 305;
             int albumId = 3;
 
-            // act
-            var songFromMethod = album.GetSongByUrl(songUrl);
+			songrepo.AddSong(new Song(title, songUrl, len, albumId));
+			var songFromMethod = songrepo.GetSongByUrl(songUrl);
 
             // assert
             Assert.Equal(title, songFromMethod.title);
             Assert.Equal(songUrl, songFromMethod.songUrl);
-            Assert.Equal(id, songFromMethod.id);
             Assert.Equal(len, songFromMethod.length);
             Assert.Equal(albumId, songFromMethod.albumId);
         }
@@ -92,7 +192,7 @@ namespace ISS_Wildcats.Backend.UnitTests
             int len = 305;
             int albumId = 3;
 
-            var song = new Song(title, songUrl, id, len, albumId);
+            var song = new Song(title, songUrl, len, albumId);
 
             // act
             album.DeleteSong(song);

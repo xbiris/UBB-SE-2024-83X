@@ -27,10 +27,10 @@ namespace ISS_Wildcats.Backend.UnitTests
             string songUrl4 = "http://example.com/song4.mp3";
 
             // act
-            var song1 = new Song(title1, songUrl1, 0, 0, 0);
-            var song2 = new Song(title2, songUrl2, 0, 0, 0);
-            var song3 = new Song(title3, songUrl3, 0, 0, 0);
-            var song4 = new Song(title4, songUrl4, 0, 0, 0);
+            var song1 = new Song(title1, songUrl1, 0, 0);
+            var song2 = new Song(title2, songUrl2, 0, 0);
+            var song3 = new Song(title3, songUrl3, 0, 0);
+            var song4 = new Song(title4, songUrl4, 0, 0);
 
             // assert
             Assert.Equal(title1, song1.title);
@@ -51,21 +51,6 @@ namespace ISS_Wildcats.Backend.UnitTests
         }
 
         [Fact]
-        public void TestId()
-        {
-            // arrange
-            string title1 = "Golden Hour";
-            string songUrl1 = "http://example.com/song1.mp3";
-
-            // act
-            var song1 = new Song(title1, songUrl1, 1, 0, 0);
-
-            // Assert
-            Assert.Equal(1, song1.id);
-            Assert.NotEqual(5, song1.id);
-        }
-
-        [Fact]
         public void TestTitle()
         {
             // arrange
@@ -73,7 +58,7 @@ namespace ISS_Wildcats.Backend.UnitTests
             string songUrl2 = "http://example.com/song2.mp3";
 
             // act
-            var song2 = new Song(title2, songUrl2, 0, 0, 0);
+            var song2 = new Song(title2, songUrl2, 0, 0);
 
             // assert
             Assert.Equal(title2, song2.title);
@@ -88,7 +73,7 @@ namespace ISS_Wildcats.Backend.UnitTests
             int assertLength = 180;
 
             // act
-            var song3 = new Song(title3, songUrl3, 0, 180, 0);
+            var song3 = new Song(title3, songUrl3, 180, 0);
 
             // assert
             Assert.Equal(assertLength, song3.length);
@@ -102,7 +87,7 @@ namespace ISS_Wildcats.Backend.UnitTests
             string songUrl4 = "http://example.com/song4.mp3";
 
             // act 
-            var song4 = new Song(title4, songUrl4, 0, 0, 0);
+            var song4 = new Song(title4, songUrl4, 0, 0);
 
             // assert
             Assert.Equal(songUrl4, song4.songUrl);
@@ -117,7 +102,7 @@ namespace ISS_Wildcats.Backend.UnitTests
             string songUrl1 = "http://example.com/song1.mp3";
 
             // act
-            var song1 = new Song(title1, songUrl1, 0, 0, 1);
+            var song1 = new Song(title1, songUrl1, 0, 1);
 
             // Assert
             Assert.Equal(1, song1.albumId);

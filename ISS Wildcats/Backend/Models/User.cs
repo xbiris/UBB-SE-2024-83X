@@ -19,9 +19,8 @@ namespace ISS_Wildcats.Backend.Models
         public string? Username { get; internal set; }
       
         private readonly string connectionString;
-        public User(string connectionString)
+        public User()
         {
-            this.connectionString = connectionString;
         }
 
         public User(string connectionString, int userID)

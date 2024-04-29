@@ -11,7 +11,7 @@ public class Song
     public string songUrl { get; set; }
     public int albumId { get; set; }
 
-    public Song(string title, string songUrl, int id, int length, int albumId)
+    public Song(string title, string songUrl, int length, int albumId)
     {
         this.title = title;
         this.songUrl = songUrl;
