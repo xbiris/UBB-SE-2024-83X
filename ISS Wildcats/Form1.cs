@@ -1,4 +1,5 @@
 using ISS_Wildcats.Backend.Controllers;
+using ISS_Wildcats.Backend.Models;
 using ISS_Wildcats.Backend.Repos;
 using ISS_Wildcats.Backend.Service;
 using System.Windows;
@@ -79,17 +80,7 @@ namespace ISS_Wildcats
 
 		private void pictureBox9_Click(object sender, EventArgs e)
 		{
-			if (!playing)
-			{
-				songController.Play();
-				playing = true;
-			}
-			else
-			{
-				songController.Pause();
-				playing = false;
-			}
-
+			PlayPause();
 		}
 
 		private void button5_Click(object sender, EventArgs e)
@@ -119,6 +110,58 @@ namespace ISS_Wildcats
 
 		private void pictureBox1_Click(object sender, EventArgs e)
 		{
+			PlayChange();
+		}
+
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+			ChangeSongId(2);
+		}
+
+		private void pictureBox3_Click(object sender, EventArgs e)
+		{
+			ChangeSongId(3);
+		}
+
+		private void pictureBox4_Click(object sender, EventArgs e)
+		{
+			ChangeSongId(4);
+		}
+
+		private void label2_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void ChangeSongId(int songId)
+		{
+			if (!playing)
+			{
+				songController.ChangeSongId(songId);
+				playing = true;
+			}
+			else
+			{
+				songController.ChangeSongId(songId);
+				playing = true;
+			}
+		}
+
+		private void PlayPause() {
+			if (!playing)
+			{
+				songController.Play();
+				playing = true;
+			}
+			else
+			{
+				songController.Pause();
+				playing = false;
+			}
+		}
+
+		private void PlayChange()
+		{
 			if (!playing)
 			{
 				songController.Play();
@@ -129,53 +172,6 @@ namespace ISS_Wildcats
 				songController.ChangeSongId(1);
 				playing = true;
 			}
-		}
-
-		private void pictureBox2_Click(object sender, EventArgs e)
-		{
-			if (!playing)
-			{
-                songController.ChangeSongId(2);
-                playing = true;
-			}
-			else
-			{
-                songController.ChangeSongId(2);
-                playing = true;
-			}
-		}
-
-		private void pictureBox3_Click(object sender, EventArgs e)
-		{
-			if (!playing)
-			{
-                songController.ChangeSongId(3);
-                playing = true;
-			}
-			else
-			{
-                songController.ChangeSongId(3);
-                playing = true;
-			}
-		}
-
-		private void pictureBox4_Click(object sender, EventArgs e)
-		{
-			if (!playing)
-			{
-                songController.ChangeSongId(4);
-                playing = true;
-			}
-			else
-			{
-                songController.ChangeSongId(4);
-                playing = true;
-			}
-		}
-
-		private void label2_Click(object sender, EventArgs e)
-		{
-
 		}
 	}
 }
