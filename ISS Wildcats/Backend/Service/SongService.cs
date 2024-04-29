@@ -1,28 +1,60 @@
-﻿using ISS_Wildcats.Backend.Controllers;
+﻿using ISS_Wildcats.Backend.Models;
+using ISS_Wildcats.Backend.Repos;
+using System;
+using System.Windows.Media;
 
 namespace ISS_Wildcats.Backend.Service
 {
-	public class SongService
-	{
-		SongController songController;
+    public class SongService : ISongService
+    {
+        private MediaPlayer player;
+        private readonly ISongRepo songRepo;
+        private int songId;
 
-		public SongService(int songId) {
-			songController = new SongController(songId);
-		}
+        public SongService(ISongRepo songRepo, int songId)
+        {
+            this.songRepo = songRepo;
+            this.songId = songId;
+            player = new MediaPlayer();
+        }
 
-		public void Play()
-		{
-			songController.Play();
-		}
+        public void ChangeSongId(int newSongId)
+        {
+            this.songId = newSongId;
 
-		public void Pause()
-		{
-			songController.Pause();
-		}
+            if (player.HasAudio)
+            {
+                player.Stop();
+            }
+            // Play immediately afterwards
+            Play();
+        }
 
-		public void Seek(int seconds)
-		{
-			songController.Seek(seconds);
-		}
-	}
+        public void Play()
+        {
+            try
+            {
+                player.Open(new Uri(songRepo.GetSongById(songId).songUrl));
+                player.Play();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Unable to play song: {e.Message}");
+            }
+        }
+
+        public void Pause()
+        {
+            if (player.CanPause)
+            {
+                player.Pause();
+            }
+        }
+
+        public void Seek(int seconds)
+        {
+            TimeSpan newPosition = new TimeSpan(0, 0, seconds);
+            player.Position = newPosition;
+        }
+    }
 }

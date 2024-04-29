@@ -1,4 +1,5 @@
 using ISS_Wildcats.Backend.Controllers;
+using ISS_Wildcats.Backend.Repos;
 using ISS_Wildcats.Backend.Service;
 using System.Windows;
 using System.Windows.Forms;
@@ -7,13 +8,17 @@ namespace ISS_Wildcats
 {
 	public partial class Form1 : Form
 	{
-		readonly string connString = "Data Source=LAPTOPDAVID\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
-		SongService songService = new SongService(1);
 		bool playing = false;
+		ISongRepo songRepo;
+		ISongService songService;
+		ISongController songController; // main component that is used
 		public Form1()
 		{
 			InitializeComponent();
-		}
+            songRepo = new SongRepo();
+            songService = new SongService(songRepo, 1);
+            songController = new SongController(songService);
+        }
 
 		private void labelAccount_Click(object sender, EventArgs e)
 		{
@@ -76,13 +81,12 @@ namespace ISS_Wildcats
 		{
 			if (!playing)
 			{
-				songService.Play();
-
+				songController.Play();
 				playing = true;
 			}
 			else
 			{
-				songService.Pause();
+				songController.Pause();
 				playing = false;
 			}
 
@@ -117,15 +121,12 @@ namespace ISS_Wildcats
 		{
 			if (!playing)
 			{
-				songService = new SongService(1);
-				songService.Play();
+				songController.Play();
 				playing = true;
 			}
 			else
 			{
-				songService.Pause();
-				songService = new SongService(1);
-				songService.Play();
+				songController.ChangeSongId(1);
 				playing = true;
 			}
 		}
@@ -134,16 +135,13 @@ namespace ISS_Wildcats
 		{
 			if (!playing)
 			{
-				songService = new SongService(2);
-				songService.Play();
-				playing = true;
+                songController.ChangeSongId(2);
+                playing = true;
 			}
 			else
 			{
-				songService.Pause();
-				songService = new SongService(2);
-				songService.Play();
-				playing = true;
+                songController.ChangeSongId(2);
+                playing = true;
 			}
 		}
 
@@ -151,16 +149,13 @@ namespace ISS_Wildcats
 		{
 			if (!playing)
 			{
-				songService = new SongService(3);
-				songService.Play();
-				playing = true;
+                songController.ChangeSongId(3);
+                playing = true;
 			}
 			else
 			{
-				songService.Pause();
-				songService = new SongService(3);
-				songService.Play();
-				playing = true;
+                songController.ChangeSongId(3);
+                playing = true;
 			}
 		}
 
@@ -168,16 +163,13 @@ namespace ISS_Wildcats
 		{
 			if (!playing)
 			{
-				songService = new SongService(4);
-				songService.Play();
-				playing = true;
+                songController.ChangeSongId(4);
+                playing = true;
 			}
 			else
 			{
-				songService.Pause();
-				songService = new SongService(4);
-				songService.Play();
-				playing = true;
+                songController.ChangeSongId(4);
+                playing = true;
 			}
 		}
 
