@@ -1,4 +1,4 @@
-﻿using ISS_Wildcats.Backend.Models;
+using ISS_Wildcats.Backend.Models;
 using Microsoft.Data.SqlClient;
 
 namespace ISS_Wildcats.Backend.Repos
