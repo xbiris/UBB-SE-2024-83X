@@ -3,7 +3,7 @@ using Microsoft.Data.SqlClient;
 
 namespace ISS_Wildcats.Backend.Repos
 {
-	public class SongRepo
+	public class SongRepo : ISongRepo
 	{
 		private SqlConnection connection;
 
@@ -113,7 +113,7 @@ namespace ISS_Wildcats.Backend.Repos
 		}
 
 
-		public Song getSongByTitle(String title)
+		public Song GetSongByTitle(String title)
 		{
 			string query = "SELECT id, title, songUrl FROM Song WHERE title = @Title";
 			SqlCommand command = new SqlCommand(query, connection);

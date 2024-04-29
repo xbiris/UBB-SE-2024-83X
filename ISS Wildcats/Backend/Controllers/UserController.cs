@@ -1,62 +1,57 @@
-﻿using ISS_Wildcats.Backend.Models;
-using ISS_Wildcats.Backend.Service;
+﻿using ISS_Wildcats.Backend.Service;
+using System;
 
 namespace ISS_Wildcats.Backend.Controllers
 {
-    public class UserController
+    public class UserController : IUserController
     {
-        private User user;
-        private SongService songService;
+        private IUserService userService;
+        private ISongController songController;
 
-        public UserController(string connectionString, int userID, int songID)
+        public UserController(IUserService userService, ISongController songController)
         {
-            user = new User(connectionString, userID);
-			songService = new SongService(songID);
+            this.userService = userService;
+            this.songController = songController;
         }
 
-        // User management methods
-        public void ChangeName(string newName)
+        public void ChangeName(int userId, string newName)
         {
-            user.Name = newName;
-            user.Update();
+            userService.UpdateUserName(userId, newName);
         }
 
-        public void ChangeEmail(string newEmail)
+        public void ChangeEmail(int userId, string newEmail)
         {
-            user.Email = newEmail;
-            user.Update();
+            userService.UpdateUserEmail(userId, newEmail);
         }
 
-        public void ChangePassword(string newPassword)
+        public void ChangePassword(int userId, string newPassword)
         {
-            user.Password = newPassword;
-            user.Update();
+            userService.UpdateUserPassword(userId, newPassword);
         }
 
-        public void ChangeBirthDate(DateTime newBirthDate)
+        public void ChangeBirthDate(int userId, DateTime newBirthDate)
         {
-            user.BirthDate = newBirthDate;
-            user.Update();
+            userService.UpdateUserBirthDate(userId, newBirthDate);
         }
 
-        public void DeleteUser()
+        public void DeleteUser(int userId)
         {
-            user.Delete();
+            userService.DeleteUser(userId);
         }
 
-        public void PlaySong()
+        public void PlaySong(int songId)
         {
-			songService.Play();
+            songController.Play();
         }
 
         public void PauseSong()
         {
-			songService.Pause();
+            songController.Pause();
         }
 
         public void SeekSong(int seconds)
         {
-			songService.Seek(seconds);
+            songController.Seek(seconds);
         }
     }
 }
