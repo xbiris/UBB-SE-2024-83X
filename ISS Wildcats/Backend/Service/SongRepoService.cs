@@ -1,12 +1,12 @@
-﻿using ISS_Wildcats.Backend.Models;
+﻿using System.Collections.Generic;
+using ISS_Wildcats.Backend.Models;
 using ISS_Wildcats.Backend.Repos;
-using System.Collections.Generic;
 
 namespace ISS_Wildcats.Backend.Service
 {
 	public class SongRepoService : ISongRepoService
 	{
-		private readonly ISongRepo songRepo; 
+		private readonly ISongRepo songRepo;
 
 		public SongRepoService(ISongRepo songRepo)
 		{

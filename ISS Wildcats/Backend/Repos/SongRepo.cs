@@ -9,20 +9,19 @@ namespace ISS_Wildcats.Backend.Repos
 
 		public SongRepo()
 		{
-			string connectionString = "Data Source=LAPTOPDAVID\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
+			string connectionString = "Data Source=DESKTOP-LDJ0KI4\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
 			connection = new SqlConnection(connectionString);
 		}
-
 
 		public void AddSong(Song song)
 		{
 			string query = "INSERT INTO Song (title, song_length, songUrl, album_id) VALUES (@Title, @Length, @SongUrl, @AlbumId)";
 			SqlCommand command = new SqlCommand(query, connection);
 
-			command.Parameters.AddWithValue("@Title", song.title);
-			command.Parameters.AddWithValue("@Length", song.length);
-			command.Parameters.AddWithValue("@SongUrl", song.songUrl);
-			command.Parameters.AddWithValue("@AlbumId", song.albumId);
+			command.Parameters.AddWithValue("@Title", song.Title);
+			command.Parameters.AddWithValue("@Length", song.Length);
+			command.Parameters.AddWithValue("@SongUrl", song.SongUrl);
+			command.Parameters.AddWithValue("@AlbumId", song.AlbumId);
 
 			try
 			{
@@ -40,7 +39,7 @@ namespace ISS_Wildcats.Backend.Repos
 			string query = "DELETE FROM Song WHERE id = @Id";
 			SqlCommand command = new SqlCommand(query, connection);
 
-			command.Parameters.AddWithValue("@Id", song.id);
+			command.Parameters.AddWithValue("@Id", song.Id);
 
 			try
 			{
@@ -72,8 +71,7 @@ namespace ISS_Wildcats.Backend.Repos
 						reader["title"].ToString(),
 						reader["songUrl"].ToString(),
 						(int)reader["length"],
-						(int)reader["albumId"]
-					);
+						(int)reader["albumId"]);
 					songs.Add(song);
 				}
 				reader.Close();
@@ -106,8 +104,7 @@ namespace ISS_Wildcats.Backend.Repos
 						reader["title"].ToString(),
 						reader["songUrl"].ToString(),
 						(int)reader["length"],
-						(int)reader["albumId"]
-					);
+						(int)reader["albumId"]);
 				}
 				return null;
 			}
@@ -117,8 +114,7 @@ namespace ISS_Wildcats.Backend.Repos
 			}
 		}
 
-
-		public Song GetSongByTitle(String title)
+		public Song GetSongByTitle(string title)
 		{
 			string query = "SELECT id, title, song_length as length, songUrl, album_id as albumId FROM Song WHERE title = @Title";
 			SqlCommand command = new SqlCommand(query, connection);
@@ -134,8 +130,7 @@ namespace ISS_Wildcats.Backend.Repos
 						reader["title"].ToString(),
 						reader["songUrl"].ToString(),
 						(int)reader["length"],
-						(int)reader["albumId"]
-					);
+						(int)reader["albumId"]);
 				}
 				return null;
 			}
@@ -145,7 +140,7 @@ namespace ISS_Wildcats.Backend.Repos
 			}
 		}
 
-		public Song GetSongByUrl(String songPath)
+		public Song GetSongByUrl(string songPath)
 		{
 			string query = "SELECT id, title, song_length as length, songUrl, album_id as albumId FROM Song WHERE songUrl = @songUrl";
 			SqlCommand command = new SqlCommand(query, connection);
@@ -161,8 +156,7 @@ namespace ISS_Wildcats.Backend.Repos
 						reader["title"].ToString(),
 						reader["songUrl"].ToString(),
 						(int)reader["length"],
-						(int)reader["albumId"]
-					);
+						(int)reader["albumId"]);
 				}
 				return null;
 			}
@@ -189,8 +183,7 @@ namespace ISS_Wildcats.Backend.Repos
 						reader["title"].ToString(),
 						reader["songUrl"].ToString(),
 						(int)reader["length"],
-						(int)reader["albumId"]
-					));
+						(int)reader["albumId"]));
 				}
 				return songs;
 			}
@@ -198,8 +191,6 @@ namespace ISS_Wildcats.Backend.Repos
 			{
 				connection.Close();
 			}
-
 		}
 	}
-
 }

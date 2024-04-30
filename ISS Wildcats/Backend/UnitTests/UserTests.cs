@@ -1,21 +1,20 @@
-﻿using ISS_Wildcats.Backend.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ISS_Wildcats.Backend.Models;
 using Xunit;
 
 namespace ISS_Wildcats.Backend.UnitTests
 {
     public class UserTests
     {
-
         [Fact]
         public void TestUserClass()
         {
             // arrange
-            string connectionString = "Data Source=LAPTOPDAVID\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
+            string connectionString = "Data Source=DESKTOP-LDJ0KI4\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
             int idUser1 = 1;
             string nameUser1 = "John Doe";
             string emailUser1 = "johndoe@example.com";

@@ -1,9 +1,9 @@
-﻿using ISS_Wildcats.Backend.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ISS_Wildcats.Backend.Models;
 using Xunit;
 using Moq;
 using ISS_Wildcats.Backend.Repos;
@@ -90,9 +90,8 @@ namespace ISS_Wildcats.Backend.UnitTests
 			mockRepo.Verify(repo => repo.DeletePlaylist(playlistId), Times.Once);
 		}
 
-
 		[Fact]
-        public void TestConstructorsPropertiesLoad() 
+        public void TestConstructorsPropertiesLoad()
         {
             // arrange
             string connectionString = "Data Source=LAPTOPDAVID\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
@@ -136,7 +135,6 @@ namespace ISS_Wildcats.Backend.UnitTests
             }
 			Playlist playlist2 = playlistrepo.GetPlaylist(4);
             Assert.Equal("123", playlist2.Name);
-
         }
 
         [Fact]
@@ -153,8 +151,9 @@ namespace ISS_Wildcats.Backend.UnitTests
             {
 				var playlist = playlistrepo.GetPlaylist(1);
 			}
-            catch {
-                Assert.True(true); //album2 could not be found
+            catch
+            {
+                Assert.True(true);	// album2 could not be found
             }
         }
     }

@@ -1,6 +1,6 @@
-﻿using ISS_Wildcats.Backend.Models;
+﻿using System;
+using ISS_Wildcats.Backend.Models;
 using ISS_Wildcats.Backend.Repos;
-using System;
 
 namespace ISS_Wildcats.Backend.Service
 {

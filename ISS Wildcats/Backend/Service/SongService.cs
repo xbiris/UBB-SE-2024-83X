@@ -1,7 +1,7 @@
-﻿using ISS_Wildcats.Backend.Models;
-using ISS_Wildcats.Backend.Repos;
-using System;
+﻿using System;
 using System.Windows.Media;
+using ISS_Wildcats.Backend.Models;
+using ISS_Wildcats.Backend.Repos;
 
 namespace ISS_Wildcats.Backend.Service
 {
@@ -34,7 +34,7 @@ namespace ISS_Wildcats.Backend.Service
         {
             try
             {
-                player.Open(new Uri(songRepo.GetSongById(songId).songUrl));
+                player.Open(new Uri(songRepo.GetSongById(songId).SongUrl));
                 player.Play();
             }
             catch (Exception e)
