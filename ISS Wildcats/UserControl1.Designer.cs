@@ -169,7 +169,7 @@ namespace ISS_Wildcats
             label1.Size = new Size(200, 29);
             label1.TabIndex = 8;
             label1.Text = "Account Settings";
-            label1.Click += label1_Click;
+            label1.Click += Label1_Click;
             // 
             // label2
             // 
@@ -182,7 +182,7 @@ namespace ISS_Wildcats
             label2.Size = new Size(172, 48);
             label2.TabIndex = 7;
             label2.Text = "Hello Dude";
-            label2.Click += label2_Click;
+            label2.Click += Label2_Click;
             // 
             // label10
             // 
@@ -196,7 +196,7 @@ namespace ISS_Wildcats
             label10.Size = new Size(112, 29);
             label10.TabIndex = 10;
             label10.Text = "User Name";
-            label10.Click += label10_Click;
+            label10.Click += Label10_Click;
             // 
             // label11
             // 
@@ -210,7 +210,7 @@ namespace ISS_Wildcats
             label11.Size = new Size(132, 29);
             label11.TabIndex = 9;
             label11.Text = "Password";
-            label11.Click += label11_Click_1;
+            label11.Click += Label11_Click_1;
             // 
             // panel3
             // 
@@ -224,7 +224,7 @@ namespace ISS_Wildcats
             panel3.Size = new Size(184, 260);
             panel3.TabIndex = 14;
             panel3.Visible = false;
-            panel3.Paint += panel3_Paint;
+            panel3.Paint += Panel3_Paint;
             // 
             // pictureBox1
             // 
@@ -235,7 +235,7 @@ namespace ISS_Wildcats
             pictureBox1.Size = new Size(28, 28);
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox1.Click += PictureBox1_Click;
             // 
             // UserControl1
             // 

@@ -4,11 +4,11 @@ namespace ISS_Wildcats
 {
     internal static class Program
     {
-        static void Main()
+        public static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Form1 FormInitial = new Form1();
-            Application.Run(FormInitial);
+            Form1 formInitial = new Form1();
+            Application.Run(formInitial);
         }
     }
 }

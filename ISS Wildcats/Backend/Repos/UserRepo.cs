@@ -1,6 +1,6 @@
-﻿using ISS_Wildcats.Backend.Models;
+﻿using System;
+using ISS_Wildcats.Backend.Models;
 using Microsoft.Data.SqlClient;
-using System;
 
 namespace ISS_Wildcats.Backend.Repos
 {
@@ -10,7 +10,7 @@ namespace ISS_Wildcats.Backend.Repos
 
         public UserRepo()
         {
-            string connectionString = "Data Source=LAPTOPDAVID\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
+            string connectionString = "Data Source=DESKTOP-LDJ0KI4\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;";
             connection = new SqlConnection(connectionString);
         }
 

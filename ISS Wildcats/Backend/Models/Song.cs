@@ -5,18 +5,17 @@ using System;
 
 public class Song
 {
-    public int id { get; set; }
-    public string title { get; set; }
-    public int length { get; set; }
-    public string songUrl { get; set; }
-    public int albumId { get; set; }
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public int Length { get; set; }
+    public string SongUrl { get; set; }
+    public int AlbumId { get; set; }
 
     public Song(string title, string songUrl, int length, int albumId)
     {
-        this.title = title;
-        this.songUrl = songUrl;
-        this.id = id;
-        this.length = length;
-        this.albumId = albumId;
+        this.Title = title;
+        this.SongUrl = songUrl;
+        this.Length = length;
+        this.AlbumId = albumId;
     }
 }

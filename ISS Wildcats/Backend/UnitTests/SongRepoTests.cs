@@ -1,12 +1,12 @@
-﻿using ISS_Wildcats.Backend.Models;
-using ISS_Wildcats.Backend.Repos;
-using ISS_Wildcats.Backend.Service;
-using Moq;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ISS_Wildcats.Backend.Models;
+using ISS_Wildcats.Backend.Repos;
+using ISS_Wildcats.Backend.Service;
+using Moq;
 using Xunit;
 
 namespace ISS_Wildcats.Backend.UnitTests
@@ -28,9 +28,9 @@ namespace ISS_Wildcats.Backend.UnitTests
 			var retrievedSong = songService.GetSongByTitle("Billie Jean");
 
 			// Assert
-			Assert.Equal("Billie Jean", retrievedSong.title);
-			Assert.Equal(200, retrievedSong.length);
-			Assert.Equal(3, retrievedSong.albumId);
+			Assert.Equal("Billie Jean", retrievedSong.Title);
+			Assert.Equal(200, retrievedSong.Length);
+			Assert.Equal(3, retrievedSong.AlbumId);
 		}
 
 		[Fact]
@@ -47,10 +47,10 @@ namespace ISS_Wildcats.Backend.UnitTests
 			var actualSong = songService.GetSongById(28);
 
 			// Assert
-			Assert.Equal("Event Horizon", actualSong.title);
-			Assert.Equal("http://example.com/song4.mp3", actualSong.songUrl);
-			Assert.Equal(305, actualSong.length);
-			Assert.Equal(3, actualSong.albumId);
+			Assert.Equal("Event Horizon", actualSong.Title);
+			Assert.Equal("http://example.com/song4.mp3", actualSong.SongUrl);
+			Assert.Equal(305, actualSong.Length);
+			Assert.Equal(3, actualSong.AlbumId);
 		}
 
 		[Fact]
@@ -67,10 +67,10 @@ namespace ISS_Wildcats.Backend.UnitTests
 			var retrievedSong = songService.GetSongByUrl("http://example.com/song4.mp3");
 
 			// Assert
-			Assert.Equal("Event Horizon", retrievedSong.title);
-			Assert.Equal("http://example.com/song4.mp3", retrievedSong.songUrl);
-			Assert.Equal(305, retrievedSong.length);
-			Assert.Equal(3, retrievedSong.albumId);
+			Assert.Equal("Event Horizon", retrievedSong.Title);
+			Assert.Equal("http://example.com/song4.mp3", retrievedSong.SongUrl);
+			Assert.Equal(305, retrievedSong.Length);
+			Assert.Equal(3, retrievedSong.AlbumId);
 		}
 
 		[Fact]
@@ -110,7 +110,6 @@ namespace ISS_Wildcats.Backend.UnitTests
 			Assert.NotEmpty(songsByCreator);
 		}
 
-
 		[Fact]
         public void TestSongRepoAddGet()
         {
@@ -129,9 +128,9 @@ namespace ISS_Wildcats.Backend.UnitTests
             songRepo.AddSong(song);
 
             // assert
-            Assert.Equal(songRepo.GetSongByTitle(title).title, title);
-            Assert.Equal(songRepo.GetSongByTitle(title).length, len);
-            Assert.Equal(songRepo.GetSongByTitle(title).albumId, albumId);
+            Assert.Equal(songRepo.GetSongByTitle(title).Title, title);
+            Assert.Equal(songRepo.GetSongByTitle(title).Length, len);
+            Assert.Equal(songRepo.GetSongByTitle(title).AlbumId, albumId);
         }
 
         [Fact]
@@ -152,10 +151,10 @@ namespace ISS_Wildcats.Backend.UnitTests
             var songFromMethod = songrepo.GetSongById(id);
 
             // assert
-            Assert.Equal(title, songFromMethod.title);
-            Assert.Equal(songUrl, songFromMethod.songUrl);
-            Assert.Equal(len, songFromMethod.length);
-            Assert.Equal(albumId, songFromMethod.albumId);
+            Assert.Equal(title, songFromMethod.Title);
+            Assert.Equal(songUrl, songFromMethod.SongUrl);
+            Assert.Equal(len, songFromMethod.Length);
+            Assert.Equal(albumId, songFromMethod.AlbumId);
         }
 
         [Fact]
@@ -174,10 +173,10 @@ namespace ISS_Wildcats.Backend.UnitTests
 			var songFromMethod = songrepo.GetSongByUrl(songUrl);
 
             // assert
-            Assert.Equal(title, songFromMethod.title);
-            Assert.Equal(songUrl, songFromMethod.songUrl);
-            Assert.Equal(len, songFromMethod.length);
-            Assert.Equal(albumId, songFromMethod.albumId);
+            Assert.Equal(title, songFromMethod.Title);
+            Assert.Equal(songUrl, songFromMethod.SongUrl);
+            Assert.Equal(len, songFromMethod.Length);
+            Assert.Equal(albumId, songFromMethod.AlbumId);
         }
 
         [Fact]

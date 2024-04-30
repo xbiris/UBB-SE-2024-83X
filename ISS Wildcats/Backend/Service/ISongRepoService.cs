@@ -1,5 +1,5 @@
-﻿using ISS_Wildcats.Backend.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using ISS_Wildcats.Backend.Models;
 
 namespace ISS_Wildcats.Backend.Service
 {

@@ -1,7 +1,7 @@
-﻿using ISS_Wildcats.Backend.Models;
-using Microsoft.Data.SqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using ISS_Wildcats.Backend.Models;
+using Microsoft.Data.SqlClient;
 
 namespace ISS_Wildcats.Backend.Repos
 {

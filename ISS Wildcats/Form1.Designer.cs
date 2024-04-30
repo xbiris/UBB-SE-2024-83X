@@ -105,7 +105,7 @@ namespace ISS_Wildcats
 			button1.TabIndex = 0;
 			button1.Text = "Home";
 			button1.UseVisualStyleBackColor = true;
-			button1.Click += button1_Click;
+			button1.Click += Button1_Click;
 			// 
 			// textBox1
 			// 
@@ -154,7 +154,7 @@ namespace ISS_Wildcats
 			panel12.Name = "panel12";
 			panel12.Size = new Size(106, 48);
 			panel12.TabIndex = 7;
-			panel12.Paint += panel12_Paint;
+			panel12.Paint += Panel12_Paint;
 			// 
 			// pictureBox11
 			// 
@@ -185,7 +185,7 @@ namespace ISS_Wildcats
 			pictureBox9.Size = new Size(39, 34);
 			pictureBox9.TabIndex = 4;
 			pictureBox9.TabStop = false;
-			pictureBox9.Click += pictureBox9_Click;
+			pictureBox9.Click += PictureBox9_Click;
 			// 
 			// splitContainer1
 			// 
@@ -195,7 +195,7 @@ namespace ISS_Wildcats
 			// splitContainer1.Panel1
 			// 
 			splitContainer1.Panel1.Controls.Add(panel10);
-			splitContainer1.Panel1.Paint += splitContainer1_Panel1_Paint;
+			splitContainer1.Panel1.Paint += SplitContainer1_Panel1_Paint;
 			// 
 			// splitContainer1.Panel2
 			// 
@@ -212,7 +212,7 @@ namespace ISS_Wildcats
 			panel10.Name = "panel10";
 			panel10.Size = new Size(178, 462);
 			panel10.TabIndex = 0;
-			panel10.Paint += panel10_Paint;
+			panel10.Paint += Panel10_Paint;
 			// 
 			// panel2
 			// 
@@ -223,7 +223,7 @@ namespace ISS_Wildcats
 			panel2.Name = "panel2";
 			panel2.Size = new Size(156, 164);
 			panel2.TabIndex = 0;
-			panel2.Paint += panel2_Paint;
+			panel2.Paint += Panel2_Paint;
 			// 
 			// label1
 			// 
@@ -234,7 +234,7 @@ namespace ISS_Wildcats
 			label1.Size = new Size(147, 25);
 			label1.TabIndex = 1;
 			label1.Text = "Song title / Artist";
-			label1.Click += label1_Click;
+			label1.Click += Label1_Click;
 			// 
 			// pictureBox1
 			// 
@@ -246,7 +246,7 @@ namespace ISS_Wildcats
 			pictureBox1.Size = new Size(150, 129);
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
-			pictureBox1.Click += pictureBox1_Click;
+			pictureBox1.Click += PictureBox1_Click;
 			// 
 			// panel11
 			// 
@@ -416,7 +416,7 @@ namespace ISS_Wildcats
 			pictureBox4.Size = new Size(150, 129);
 			pictureBox4.TabIndex = 0;
 			pictureBox4.TabStop = false;
-			pictureBox4.Click += pictureBox4_Click;
+			pictureBox4.Click += PictureBox4_Click;
 			// 
 			// panel4
 			// 
@@ -448,7 +448,7 @@ namespace ISS_Wildcats
 			pictureBox3.Size = new Size(150, 129);
 			pictureBox3.TabIndex = 0;
 			pictureBox3.TabStop = false;
-			pictureBox3.Click += pictureBox3_Click;
+			pictureBox3.Click += PictureBox3_Click;
 			// 
 			// panel3
 			// 
@@ -459,7 +459,7 @@ namespace ISS_Wildcats
 			panel3.Name = "panel3";
 			panel3.Size = new Size(156, 164);
 			panel3.TabIndex = 2;
-			panel3.Paint += panel3_Paint;
+			panel3.Paint += Panel3_Paint;
 			// 
 			// label2
 			// 
@@ -470,7 +470,7 @@ namespace ISS_Wildcats
 			label2.Size = new Size(147, 25);
 			label2.TabIndex = 1;
 			label2.Text = "Song title / Artist";
-			label2.Click += label2_Click;
+			label2.Click += Label2_Click;
 			// 
 			// pictureBox2
 			// 
@@ -482,7 +482,7 @@ namespace ISS_Wildcats
 			pictureBox2.Size = new Size(150, 129);
 			pictureBox2.TabIndex = 0;
 			pictureBox2.TabStop = false;
-			pictureBox2.Click += pictureBox2_Click;
+			pictureBox2.Click += PictureBox2_Click;
 			// 
 			// button7
 			// 
@@ -493,7 +493,7 @@ namespace ISS_Wildcats
 			button7.TabIndex = 5;
 			button7.Text = "Profile";
 			button7.UseVisualStyleBackColor = true;
-			button7.Click += button7_Click;
+			button7.Click += Button7_Click;
 			// 
 			// userControl11
 			// 

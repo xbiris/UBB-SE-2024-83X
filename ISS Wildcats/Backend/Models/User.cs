@@ -1,10 +1,10 @@
-﻿using Microsoft.Data.SqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.Data.SqlClient;
 
 namespace ISS_Wildcats.Backend.Models
 {
@@ -17,7 +17,6 @@ namespace ISS_Wildcats.Backend.Models
         public string Password { get; set; }
 
         public string? Username { get; internal set; }
-      
         private readonly string connectionString;
         public User()
         {
@@ -66,13 +65,11 @@ namespace ISS_Wildcats.Backend.Models
                     this.Email = "mail";
                     this.BirthDate = DateTime.MinValue;
                     this.Password = "password";
-
                 }
             }
             finally
             {
                 connection.Close();
-
             }
         }
 

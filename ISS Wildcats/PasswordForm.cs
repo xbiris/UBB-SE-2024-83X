@@ -17,19 +17,16 @@ namespace ISS_Wildcats
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void PasswordForm_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
