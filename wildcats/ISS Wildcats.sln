@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISS Wildcats", "ISS Wildcats\ISS Wildcats.csproj", "{294172A9-156B-4570-99B1-AD46E8E6A7B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISS Wildcats", "ISS Wildcats\ISS Wildcats.csproj", "{294172A9-156B-4570-99B1-AD46E8E6A7B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Merged", "..\Merged\Merged.csproj", "{2AD0091C-9B7F-4EEE-999F-2E06E30A193F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SE_project", "..\SE_project\SE_project\SE_project.csproj", "{3612C842-59C4-4F9F-9670-8C860CD9EB29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{294172A9-156B-4570-99B1-AD46E8E6A7B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{294172A9-156B-4570-99B1-AD46E8E6A7B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{294172A9-156B-4570-99B1-AD46E8E6A7B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD0091C-9B7F-4EEE-999F-2E06E30A193F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD0091C-9B7F-4EEE-999F-2E06E30A193F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD0091C-9B7F-4EEE-999F-2E06E30A193F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD0091C-9B7F-4EEE-999F-2E06E30A193F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3612C842-59C4-4F9F-9670-8C860CD9EB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3612C842-59C4-4F9F-9670-8C860CD9EB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3612C842-59C4-4F9F-9670-8C860CD9EB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3612C842-59C4-4F9F-9670-8C860CD9EB29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,3 @@
+{
+	"DatabaseConnection": "Data Source=LAPTOPDAVID\\SQLEXPRESS;Initial Catalog=se_2024;Integrated Security=True;Encrypt=False;"
+}

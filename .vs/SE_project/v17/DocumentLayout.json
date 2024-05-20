@@ -1,0 +1,238 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF36DC1-B7B2-454F-A290-8A403782E337}|Merged\\Merged.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\merged\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF36DC1-B7B2-454F-A290-8A403782E337}|Merged\\Merged.csproj|solutionrelative:merged\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF36DC1-B7B2-454F-A290-8A403782E337}|Merged\\Merged.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\merged\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8BF36DC1-B7B2-454F-A290-8A403782E337}|Merged\\Merged.csproj|solutionrelative:merged\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\wildcats\\iss wildcats\\backend\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|solutionrelative:wildcats\\iss wildcats\\backend\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\wildcats\\iss wildcats\\backend\\repos\\songrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|solutionrelative:wildcats\\iss wildcats\\backend\\repos\\songrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\wildcats\\iss wildcats\\backend\\repos\\playlistrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|solutionrelative:wildcats\\iss wildcats\\backend\\repos\\playlistrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\wildcats\\iss wildcats\\backend\\unittests\\testplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|solutionrelative:wildcats\\iss wildcats\\backend\\unittests\\testplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\wildcats\\iss wildcats\\backend\\repos\\iplaylistrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|solutionrelative:wildcats\\iss wildcats\\backend\\repos\\iplaylistrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\wildcats\\iss wildcats\\backend\\repos\\isongrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A1DBC47-DA5F-40ED-BFC7-FEF4BA9E89DB}|wildcats\\ISS Wildcats\\ISS Wildcats.csproj|solutionrelative:wildcats\\iss wildcats\\backend\\repos\\isongrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\se_project\\appconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|solutionrelative:se_project\\appconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\se_project\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|solutionrelative:se_project\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\se_project\\ui\\artistmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|solutionrelative:se_project\\ui\\artistmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\se_project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|solutionrelative:se_project\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|c:\\general\\facultate\\iss\\merged\\ubb-se-2024-83x\\se_project\\ui\\artistmainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2BC03A2-1F9E-49D1-B6DF-46ECA46AF853}|SE_project\\SE_project.csproj|solutionrelative:se_project\\ui\\artistmainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\Merged\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Merged\\MainWindow.xaml",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\Merged\\MainWindow.xaml",
+              "RelativeToolTip": "Merged\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-19T22:50:40.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\Merged\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Merged\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\Merged\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Merged\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAcwFQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:50:40.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\UserRepo.cs",
+              "RelativeDocumentMoniker": "wildcats\\ISS Wildcats\\Backend\\Repos\\UserRepo.cs",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\UserRepo.cs",
+              "RelativeToolTip": "wildcats\\ISS Wildcats\\Backend\\Repos\\UserRepo.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAwAAACKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:44:14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestPlaylist.cs",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\UnitTests\\TestPlaylist.cs",
+              "RelativeDocumentMoniker": "wildcats\\ISS Wildcats\\Backend\\UnitTests\\TestPlaylist.cs",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\UnitTests\\TestPlaylist.cs",
+              "RelativeToolTip": "wildcats\\ISS Wildcats\\Backend\\UnitTests\\TestPlaylist.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAhwGYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:43:43.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlaylistRepo.cs",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\PlaylistRepo.cs",
+              "RelativeDocumentMoniker": "wildcats\\ISS Wildcats\\Backend\\Repos\\PlaylistRepo.cs",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\PlaylistRepo.cs",
+              "RelativeToolTip": "wildcats\\ISS Wildcats\\Backend\\Repos\\PlaylistRepo.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:43:37.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPlaylistRepo.cs",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\IPlaylistRepo.cs",
+              "RelativeDocumentMoniker": "wildcats\\ISS Wildcats\\Backend\\Repos\\IPlaylistRepo.cs",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\IPlaylistRepo.cs",
+              "RelativeToolTip": "wildcats\\ISS Wildcats\\Backend\\Repos\\IPlaylistRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:43:36.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ISongRepo.cs",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\ISongRepo.cs",
+              "RelativeDocumentMoniker": "wildcats\\ISS Wildcats\\Backend\\Repos\\ISongRepo.cs",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\ISongRepo.cs",
+              "RelativeToolTip": "wildcats\\ISS Wildcats\\Backend\\Repos\\ISongRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:43:35.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SongRepo.cs",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\SongRepo.cs",
+              "RelativeDocumentMoniker": "wildcats\\ISS Wildcats\\Backend\\Repos\\SongRepo.cs",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\wildcats\\ISS Wildcats\\Backend\\Repos\\SongRepo.cs",
+              "RelativeToolTip": "wildcats\\ISS Wildcats\\Backend\\Repos\\SongRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:43:20.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appconfig.json",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\appconfig.json",
+              "RelativeDocumentMoniker": "SE_project\\appconfig.json",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\appconfig.json",
+              "RelativeToolTip": "SE_project\\appconfig.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-19T22:43:07.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SE_project\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\MainWindow.xaml.cs",
+              "RelativeToolTip": "SE_project\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:37:56.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ArtistMainWindow.xaml",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\UI\\ArtistMainWindow.xaml",
+              "RelativeDocumentMoniker": "SE_project\\UI\\ArtistMainWindow.xaml",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\UI\\ArtistMainWindow.xaml",
+              "RelativeToolTip": "SE_project\\UI\\ArtistMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-19T22:37:03.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ArtistMainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\UI\\ArtistMainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SE_project\\UI\\ArtistMainWindow.xaml.cs",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\UI\\ArtistMainWindow.xaml.cs",
+              "RelativeToolTip": "SE_project\\UI\\ArtistMainWindow.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAnwBsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T22:34:02.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "SE_project\\MainWindow.xaml",
+              "ToolTip": "C:\\General\\Facultate\\ISS\\Merged\\UBB-SE-2024-83X\\SE_project\\MainWindow.xaml",
+              "RelativeToolTip": "SE_project\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-19T22:33:34.194Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
